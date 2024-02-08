@@ -5,10 +5,12 @@
 .topBar {
     display: block;
     background-color: fuchsia;
+    width: 100%
 }
 nav {
     display:block;
     background-color: aqua;
+    width: 100%
 }
 ul {
     display: inline;
