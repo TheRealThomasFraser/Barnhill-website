@@ -13,6 +13,17 @@ header{
     padding: 20px, 100px;
     background: red;
 }
+ul{
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+ul li {
+    display: inline-block;
+}
 
 .navigation a{
     position: relative;
