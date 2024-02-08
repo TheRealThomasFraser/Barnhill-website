@@ -7,6 +7,10 @@
     background-color: fuchsia;
     width: 100%
 }
+#logo {
+  width: 100px;
+  height:100px
+}
 nav {
     display:block;
     background-color: aqua;
@@ -26,6 +30,8 @@ li{
 /* The dropdown container */
 .dropdown {
   overflow: hidden;
+  display:inline;
+  width:auto;
 }
 
 /* Dropdown button */
