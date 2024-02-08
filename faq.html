@@ -4,12 +4,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Frequently asked questions</title>
+    <title>Frequently Asked Questions</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   
 
 <body>
+
+  <div class="topBar"> <!-- Opens div class topBar -->
+
+    <img id="logo" src="bpslogo.png" alt="School Logo">
+    <h1>Barnhill Primary School</h1>
+
+    <button id="loginBtn">Login</button>
+
+  </div> <!-- Closes div class topBar -->
+
+  <nav>
+
+    <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li>
+      <div class="dropdown"> <!-- Opens div class dropdown -->
+          <button class="aboutBtn">About <i class="fa fa caret-down"></i></button>
+          <div class="dropdown-content"> <!-- Opens div class dropdown-content-->
+            <a href="faq.html">FAQ</a>
+            <a href="dates.html">Dates</a>
+            <a href="staff.html">Staff</a>
+            <a href="uniform.html">Uniform</a>
+          </div> <!-- Closes div class dropdown-content -->
+
+        </div> <!-- Closes div class dropdown -->
+          
+
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="homeLearning.html">Home Learning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <input type="text" placeholder="search...">
+    <button>SEARCH</button>
+
+  </nav> 
+
 <h1> Frequently asked questions</h1>
 <h5>Barnhill Primary FAQ's</h5><br>
 
@@ -27,28 +67,27 @@
 
 <p> For more information on the school uniform click <a href="uniform.html">here</a> <br>For more information on our privacy policy, click <a href="https://www.dundeecity.gov.uk/service-area/children-and-families-service/schools-privacy-statement">here</a> </p>
 
-<div class="footer">
-    <footer>
-      <div class = "footer">
-      <div class="footerLeft">
-      <!--float this left-->
-      <h3> Useful Links</h3>
-      <a href = "https://twitter.com/BarnhillPrimary"><img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt= "X (Twitter)" style = "width: 60px; height:60px;"></a>
-      <a href = "https://secure.glowscotland.org.uk/login/login.htm"><img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt= "Glow RM Unify" style = "width: 60px; height:60px;"></a>
-      <a href = "https://www.dundeecity.gov.uk/"><img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt= "Dundee City Council" style = "width: 60px; height:60px;"></a>
-      <a href = "http://www.educationscotland.gov.uk/"><img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt= "Education Scotland" style = "width: 60px; height:60px;"></a>
-      <a href = "https://app.parentpay.com/public/client/security/v2/#/login"><img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt= "Parent Pay Portal" style = "width: 60px; height:60px;"></a>
-      </div>
-      <!--float this right-->
-      <div class="footerRight">
-      <p>Settings</p>
-      <p>Contact Us
-        other contact info</p>
+<div class="footer"> <!-- Opens div class footer -->
+  <footer>
+    <div class="footerLeft"> <!-- Opens div class footerLeft -->
+    <!--float this left-->
+    <h3> Useful Links</h3>
+    <a href = "https://twitter.com/BarnhillPrimary"><img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt= "X (Twitter)" style = "width: 60px; height:60px;"></a>
+    <a href = "https://secure.glowscotland.org.uk/login/login.htm"><img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt= "Glow RM Unify" style = "width: 60px; height:60px;"></a>
+    <a href = "https://www.dundeecity.gov.uk/"><img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt= "Dundee City Council" style = "width: 60px; height:60px;"></a>
+    <a href = "http://www.educationscotland.gov.uk/"><img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt= "Education Scotland" style = "width: 60px; height:60px;"></a>
+    <a href = "https://app.parentpay.com/public/client/security/v2/#/login"><img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt= "Parent Pay Portal" style = "width: 60px; height:60px;"></a>
+    </div> <!-- Closes div class footerLeft -->
+    <!--float this right-->
+    <div class="footerRight"> <!-- Opens div class footerRight -->
+    <button>Settings</button>
+    <p>Contact Us
+      other contact info</p>
+
+    <p>&#169; Barnhill Primary School 2023</p>
+    </div> <!-- Closes div class footerRight -->
   
-      <p>&#169; Barnhill Primary School 2023</p>
-      </div>
-    
-    </footer>
-  </div>
+  </footer>
+</div> <!-- Closes div class footer -->
 </body>
 </html>

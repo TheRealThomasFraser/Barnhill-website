@@ -1,20 +1,28 @@
+/* ------------------- All ------------------- */
+
 * {
     margin: 0;
     padding: 0;
 }
+
+/* ------------------- Top Bar ------------------- */
+
 .topBar {
     display: block;
-    background-color: fuchsia;
-    width: 100%
+    background-image: url(tempTopBar.jpg);
+    width: 100%;
 }
 #logo {
   width: 100px;
-  height:100px
+  height: 100px;
 }
+
+/* ------------------- Navigation - Main ------------------- */
+
 nav {
     display:block;
     background-color: aqua;
-    width: 100%
+    width: 100%;
 }
 nav ul {
   list-style-type: none;
@@ -23,9 +31,11 @@ nav ul {
   padding: 0;
 }
 
-li{
-    display:inline
+nav ul li{
+    display:inline;
 }
+
+/* ------------------- Navigation - Dropdown ------------------- */
 
 /* The dropdown container */
 .dropdown {
@@ -81,12 +91,16 @@ li{
   display: block;
 }
 
+/* ------------------- Headings ------------------- */
+
 h1 {
     display:inline;
 }
 h2 { 
     display:inline;
 }
+
+/* ------------------- Footer ------------------- */
 
 .footerLeft{
     float:left;
