@@ -21,10 +21,10 @@ ul{
     margin-right: 60px;
     font-size: 17px;
 }
-ul li {
+header ul li {
     display: inline-block;
 }
-ul li a{
+header ul li a{
     text-decoration: none;
     color: black;
     padding: 5px 20px;
