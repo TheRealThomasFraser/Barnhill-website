@@ -1,47 +1,3 @@
-.logo{
-    width:75px;
-    height:50px;
-    display: inline;
-    float:left;
-}
-nav {
-    list-style-type: none;
-    display:block;
-    float:left;
-}
-.topBar{
-    
-    display:block;
-    width:100%;
-    height:50px;
-    background-color: lightgrey;
-    left: 0;
-}
-
-.search{
-    float:right;
-    margin-right:25px;
-}
-.navBlock{
-    display:block;
-    float:left;
-    left:0;
-    background-color: green;
-    width:100%;
-}
-.navBlock a{
-    margin-left:25px;
-}
-.body{
-    display:block;
-}
-h1{
-    display:block;
-}
-h2{
-    display:inline;
-}
-
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -53,6 +9,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding-top: 50px;
 }
 
 /* Next & previous buttons */
@@ -100,6 +57,7 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  padding-top:50px;
 }
 
 /* The dots/bullets/indicators */
@@ -132,53 +90,6 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.body{
-    display:block;
-}
-h1{
-    display:inline;
-}
-h2{
-    display:inline;
 }
 
 .footerLeft{
