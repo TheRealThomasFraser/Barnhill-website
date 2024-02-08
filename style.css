@@ -31,6 +31,14 @@ header ul li a{
     border: 1px solid transparent;
 }
 
+ul li a:hover{
+    background-color: white;
+    color:black;
+}
+ul li.active a {
+    background-color: white;
+    color:black;
+}
 
 
 
