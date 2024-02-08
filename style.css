@@ -33,14 +33,17 @@ ul li a{
 }
 
 ul li a:hover{
-    background-color: white;
+    background-color: rgb(245, 22, 22);
     color:black;
 }
 ul li.active a {
-    background-color: white;
+    background-color: rgb(245, 22, 22);
     color:black;
 }
-
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
 
 
 
