@@ -134,7 +134,24 @@ h2 {
 
 /* ------------------- Tables ------------------- */
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 50px;
+}
+
+.gridHeader, .gridTable {
+  
+  padding: 20px;
+}
+
+table {
+  /* waiting for decision */
+}
+
 table, th, td {
+
 border: 1px solid black;
 border-collapse: collapse;
 }
