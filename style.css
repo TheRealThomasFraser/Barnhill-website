@@ -1,132 +1,168 @@
 /* ------------------- All ------------------- */
 
 * {
-    margin: 0;
-    padding: 0;
-}
-
-/* ------------------- Top Bar ------------------- */
-
-.topBar {
-    display: block;
-    background-image: url(tempTopBar.jpg);
-    width: 100%;
-}
-#logo {
-  width: 100px;
-  height: 100px;
-}
-
-/* ------------------- Navigation - Main ------------------- */
-
-nav {
-    display:block;
-    background-color: aqua;
-    width: 100%;
-}
-nav ul {
-  list-style-type: none;
-  display: inline;
   margin: 0;
   padding: 0;
 }
 
-nav ul li{
-    display:inline;
+body {
+  background-color: #4ABDAC;
+
 }
 
-/* ------------------- Navigation - Dropdown ------------------- */
+/* ------------------- Top Bar ------------------- */
 
-/* The dropdown container */
-.dropdown {
+.header{
+  position:fixed;
+  width:100%;
+}
+
+/* Navigation Bar and Top Bar*/
+.top-bar{
+  
+  display:flex;
+  justify-content:flex-start;
+
+  width:100%;
+
+}
+
+.top-bar{
+
+  background-image: url("https://2f1a7f9478.visitscotland.net/wsimgs/visitscotland_43421242803_396913506.jpg");
+  background-position: 50% 38%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  height:200px;
+}
+.top-bar div{
+  padding:10px 10px;
+}
+
+.title{
+  color:white;
+  font-family: Arial;
+  font-size:25px;
+  text-shadow: 2px 2px black;
+}
+
+#logo {
+  width:100px; 
+  height:100px;
+}
+
+/* moves search input and button to right */
+
+.search{
+  margin-left:auto;
+}
+
+/* ------------------- Navigation ------------------- */
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  display:inline;
-  width:auto;
+  background-color:black;
 }
 
-/* Dropdown button */
-.dropdown .aboutBtn {
-  font-size: 16px;
+nav li {
+  float: left;
+}
+
+nav li a, .aboutBtn {
   border: none;
-  outline: none;
+  display: inline-block;
   color: white;
+  text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  font-size: inherit;
+  width:150px;
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .aboutBtn {
-  background-color: red;
+nav li a:hover, .dropdown:hover .aboutBtn {
+  transition: 0.2s;
+  background-color: white;
+  color: black;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
+.aboutBtn {
+  position: relative;
+}
+
+nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: black;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
+nav .dropdown-content a {
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+nav .dropdown-content a:hover {
+  background-color: white;
+  color: black;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+nav .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 /* ------------------- Headings ------------------- */
 
 h1 {
-    display:inline;
+  display:inline;
 }
 h2 { 
-    display:inline;
+  color: rgb(255, 0, 128);
+  display:inline;
 }
 
 /* ------------------- Tables ------------------- */
 
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+border: 1px solid black;
+border-collapse: collapse;
 }
 /* ------------------- Footer ------------------- */
 
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F7B733;
+  color: black;
+  text-align: center;
+}
+
 .footerLeft{
-    float:left;
-    left:0;
+  display: inline;
+  float:left;
+  left:0;
 }
 
 .footerRight{
-    right: 0;
-    float: right;
+  display: inline;
+  right: 0;
+  float: right;
 }
 .footerLeft img{
-   padding-right: 50px;
+ padding-right: 50px;
 }
 
-.footer{
-    display: block;
-    background-color: green;
-    width:100%;
-    left:0;
-    bottom:-200px;
-    position:absolute;
-}
 
