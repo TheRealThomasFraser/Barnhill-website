@@ -10,10 +10,6 @@ body {
 
 }
 
-.mainBody {
-  display: block;
-}
-
 /* ------------------- Top Bar ------------------- */
 
 .header{
@@ -145,7 +141,7 @@ border-collapse: collapse;
 /* ------------------- Footer ------------------- */
 
 .footer{
- 
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
