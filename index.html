@@ -9,22 +9,11 @@
 </head>
 
 <body>
-<!-- ------------------- Top Bar ------------------- -->
-<div class="header"> 
-  <div class="top-bar">
-
-  <div> <a href="index.html"><img id="logo" src="bpslogo.png"></a> </div>
-
-  <div class="title"> <h1>Barnhill Primary School<h1> </div>
-
-  <div class="search"> <input type=text placeholder="Search..."> <button>Go</button> </div>
-
-  <div class="login">  <button>Login</button>
-</div>
-
-  </div>
-
+  
 <!-- ------------------- Navigation ------------------- -->
+
+<header>
+
   <nav>
 
     <ul>
@@ -46,14 +35,76 @@
     </ul>
 
   </nav> 
+  <div> <a href="index.html"><img id="logo" src="bpslogo.png"></a> </div>
+  <h1> Barnhill Primary School </h1>
+</header>
 
 <!-- ------------------- Main Body ------------------- -->
 
-  <div class="mainBody"> <!-- Opens div class mainBody -->
+<div class="mainBody"> <!-- Opens div class mainBody -->
 
     <h2> Announcements:</h2>
 
-    <!-- CAROUSEL-->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="headerimg.jpeg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="headerimage.jpeg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="headertest.jpeg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
     <h2> Who are we?</h2>
 
@@ -82,10 +133,10 @@
     </ul>
 
     <h2> Head Teacher's Message: </h2>
-
+<h1 style="display: block;"> AAAAA</h1>
     <!-- Head Teacher Image and Message -->
 
-  </div> <!-- Closes div class mainBody -->
+  
 
 <!-- ------------------- Footer ------------------- -->
 
@@ -111,7 +162,7 @@
     
     </footer>
   </div> <!-- Closes div class footer -->
-
+</div> <!-- Closes div class mainBody -->
  </body>
 
 </html>
