@@ -16,8 +16,9 @@ body, html {
 
 .mainBody {
   position: relative;
-  height: 100%;
+  height: auto;
 }
+
 
 
 /* ------------------- Top Bar ------------------- */
@@ -40,8 +41,6 @@ header h1 {
 header img {
   height: 200px;
   width:200px;
- 
-
 }
 
 /* ------------------- Navigation ------------------- */
@@ -234,13 +233,18 @@ border-collapse: collapse;
 
 /* ------------------- Footer ------------------- */
 
+.content{
+  display: block;
+}
+
 .footer{
   position: absolute;
   left: 0;
-  bottom: 0;
+ 
   width: 100%;
   background-color: #F7B733;
   color: black;
+  display: block;
   text-align: center;
 }
 
