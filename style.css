@@ -1,4 +1,4 @@
-/* ------------------- All ------------------- */
+/* ------------------- General ------------------- */
 
 * {
   margin: 0;
@@ -19,9 +19,8 @@ body, html {
   height: auto;
 }
 
+/* ------------------- Header ------------------- */
 
-
-/* ------------------- Top Bar ------------------- */
 header {
   background-image: url("headertest.jpeg");
   /* Full height */
@@ -36,7 +35,6 @@ header {
 header h1 {
   color: white;
 }
-
 
 header img {
   height: 200px;
@@ -108,7 +106,6 @@ nav .dropdown-content a:hover {
 nav .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 /* ------------------- Headings ------------------- */
 
@@ -258,5 +255,3 @@ border-collapse: collapse;
 .footerLeft img{
  padding-right: 50px;
 }
-
-
