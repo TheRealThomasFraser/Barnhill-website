@@ -10,8 +10,9 @@ body {
 
 }
 
-body, html { 
-  height:100%;
+body,
+html {
+  height: 100%;
 }
 
 .mainBody {
@@ -38,7 +39,7 @@ header h1 {
 
 header img {
   height: 200px;
-  width:200px;
+  width: 200px;
 }
 
 /* ------------------- Navigation ------------------- */
@@ -52,14 +53,15 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:black;
+  background-color: black;
 }
 
 nav li {
   float: left;
 }
 
-nav li a, .aboutBtn {
+nav li a,
+.aboutBtn {
   border: none;
   display: inline-block;
   color: white;
@@ -69,10 +71,11 @@ nav li a, .aboutBtn {
   background-color: inherit;
   font-family: inherit;
   font-size: inherit;
-  width:150px;
+  width: 150px;
 }
 
-nav li a:hover, .dropdown:hover .aboutBtn {
+nav li a:hover,
+.dropdown:hover .aboutBtn {
   transition: 0.2s;
   background-color: white;
   color: black;
@@ -86,7 +89,7 @@ nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: black;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -110,11 +113,12 @@ nav .dropdown:hover .dropdown-content {
 /* ------------------- Headings ------------------- */
 
 h1 {
-  display:inline;
+  display: inline;
 }
-h2 { 
+
+h2 {
   color: rgb(255, 0, 128);
-  display:inline;
+  display: inline;
 }
 
 /* ------------------- Tables ------------------- */
@@ -126,15 +130,49 @@ h2 {
   grid-column-gap: 50px;
 }
 
-.gridHeader, .gridTable {
-  
+.gridHeader,
+.gridTable {
+
   padding: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
 
-border: 1px solid black;
-border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.uniformContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0px;
+  grid-column-gap: 0px;
+  width: 100%;
+
+}
+
+.productCard {
+
+  height: 300px;
+}
+
+.uniformContainer img {
+
+  width: 250px;
+  height: 250px;
+}
+
+.productCardInfo {
+  display: none;
+}
+
+.productCard:hover {
+  .productCardInfo {
+    display: block;
+  }
+
 }
 
 /* ------------------- Carousel -------------------  */
@@ -146,7 +184,8 @@ border-collapse: collapse;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -168,8 +207,9 @@ border-collapse: collapse;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -204,7 +244,8 @@ border-collapse: collapse;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -215,25 +256,35 @@ border-collapse: collapse;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }
 
 /* ------------------- Footer ------------------- */
 
-.content{
+.content {
   display: block;
 }
 
-.footer{
+.footer {
   position: absolute;
   left: 0;
- 
+
   width: 100%;
   background-color: #F7B733;
   color: black;
@@ -241,17 +292,18 @@ border-collapse: collapse;
   text-align: center;
 }
 
-.footerLeft{
+.footerLeft {
   display: inline;
-  float:left;
-  left:0;
+  float: left;
+  left: 0;
 }
 
-.footerRight{
+.footerRight {
   display: inline;
   right: 0;
   float: right;
 }
-.footerLeft img{
- padding-right: 50px;
+
+.footerLeft img {
+  padding-right: 50px;
 }
