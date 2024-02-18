@@ -9,6 +9,18 @@
 </head>
 
 <body>
+
+  <script> 
+  function hideTable(tableID) {
+    var table = document.getElementById(tableID);
+    if (table.style.display == "none") {
+    table.style.display = "";
+    } else {
+      table.style.display = "none"
+    }
+  }
+  
+  </script>
   <!-- ------------------- Top Bar ------------------- -->
   <header>
 
@@ -47,131 +59,128 @@
     <p> Click on the links in the table for some home learning activities. Most of these activities are PC/laptop
       friendly and have tablet friendly versions as well. If you have any problems with any of the links please let us
       know.</p>
-    <h2> General </h2>
-    <table>
+    <h2 onclick="hideTable('genTable')"> General </h2>
+    <table id="genTable">
       <tr>
         <th> Link </th>
         <th> Description </th>
       </tr>
       <tr>
-        <td> Glow </td>
+        <td> <a href="https://sts.platform.rmunify.com/account/signin/glow"> <img src="https://pbs.twimg.com/profile_images/542261038574358528/PUswggVZ_400x400.png" class="HLimg"> </a> </td>
         <td> Log in to Glow to access email and other learning activities. </td>
       </tr>
       <tr>
-        <td> Study Ladder </td>
+        <td> <a href="https://www.studyladder.co.uk/?lc_set="> <img src="https://i.pinimg.com/280x280_RS/f1/22/49/f12249b7c3eebed24d1ca386106d997e.jpg" class="HLimg"> </a> </td>
         <td> Mathematics, English, Science and more. Many children in the school have log ins for this. Study Ladder
           will allow children to access their free account during school hours </td>
       </tr>
       <tr>
-        <td> BBC Bitesize </td>
+        <td>  <a href="https://www.bbc.co.uk/bitesize/primary"> <img src="https://ichef.bbci.co.uk/images/ic/1200xn/p0dpbj2m.jpg" class="HLimg"> </a> </td>
         <td> BBC Bitesize - links to games and activities to help with lots of curricular areas. </td>
       </tr>
       <tr>
-        <td> Sheppard Software </td>
+        <td> <a href="https://www.sheppardsoftware.com"> <img src="https://www.sheppardsoftware.com/design/images/header_logo.jpg" class="HLimg"> </a></td>
         <td> Sheppard software site has links to some fantastic learning games. </td>
       </tr>
       <tr>
-        <td> Oxford Owl </td>
+        <td> <a href="https://www.oxfordowl.co.uk"> <img src="https://home.oxfordowl.co.uk/wp-content/uploads/2022/07/socialshare_square.jpg" class="HLimg"> </a></td>
         <td> Oxford Owl. Find top tips and fun ideas to help you support your child's learning at home. </td>
       </tr>
       <tr>
-        <td> Crickweb </td>
+        <td> <a href="http://www.crickweb.co.uk"> <img src="https://www.stbedesprimary.co.uk/wp-content/uploads/2021/09/crickweb.jpg" class="HLimg"> </a></td>
         <td> Another website with lots of free games for P1-7. </td>
       </tr>
       <tr>
-        <td> Doorway Online </td>
+        <td> <a href="https://www.doorwayonline.org.uk"> <img src="https://www.doorwayonline.org.uk/wp-content/uploads/2018/05/doorway-logo.png" class="HLimg"> </a> </td>
         <td> Doorway Online. Lots of free learing activities for P1-3. </td>
       </tr>
       <tr>
-        <td> Digiworld </td>
+        <td> <a href="https://digiworld-en.theparentzone.co.uk/digiworld-en/"> <img src="https://digiworld.theparentzone.co.uk/digiworld-en/wp-content/uploads/2019/12/Digiworld-SM-Image-1.png" class="HLimg"> </a> </td>
         <td> Digiworld is a curriculum designed to help children, aged between 5 and 16, to develop the knowledge and
           skills they need to navigate the online world in a safer and more enjoyable way </td>
       </tr>
       <tr>
-        <td> TTS </td>
+        <td> <a href="https://www.tts-group.co.uk/home+learning+activities.html"> <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/59d3b45d0000ff0005acb364/0x0.png" class="HLimg"> </a> </td>
         <td> Free downloadable independent and collaborative learning activities to print. </td>
       </tr>
     </table>
 
 
-    <h2> Maths </h2>
-    <table>
+    <h2 onclick="hideTable('mathTable')"> Maths </h2>
+    <table id="mathTable">
       <tr>
         <th> Link </th>
         <th> Description </th>
       </tr>
       <tr>
-        <td> Hit The Button </td>
+        <td> <a href="https://www.topmarks.co.uk/maths-games/hit-the-button"> <img src="https://play-lh.googleusercontent.com/OMVjLfmQtr5jrgTJtUeeBvszG4vIfF2Rglv0z9vY04QnysznXftav0STQsgwIRk6h6bA" class="HLimg"> </a> </td>
         <td> A quick and easy game to practise addition, subtraction and multiplication tables. </td>
       </tr>
       <tr>
-        <td> Topmarks </td>
+        <td> <a href="https://www.topmarks.co.uk"> <img src="https://blogs.glowscotland.org.uk/wl/public/bellsquarrypsblog/uploads/sites/576/2018/03/top-marks.png" class="HLimg"> </a> </td>
         <td> Lots of fun numeracy games for P1 all the way to P7. </td>
       </tr>
       <tr>
-        <td> Sumdog </td>
+        <td> <a href="https://www.sumdog.com/user/sign_in"> <img src="https://play-lh.googleusercontent.com/OOZdujusQ-jTETuDLZ6RQrTa6GapvorWqcS8oS136TVU0rxxpCk3P5SO2IlEnbkHkQ" class="HLimg"> </a> </td>
         <td> Numeracy games. P4-7 children should have a log in for this site. </td>
       </tr>
       <tr>
-        <td> Math Playground</td>
+        <td> <a href="https://www.mathplayground.com"> <img src="https://www.westfield.ma.edu/PersonalPages/draker/edcom/final/sp19/sectionb/oriole/mathplaygroun.png" class="HLimg"> </a> </td>
         <td> Number bonds to ten. A great way to look for numbers that add together to make 10. </td>
       </tr>
       <tr>
-        <td> Maths Zone </td>
+        <td> <a href="https://mathszone.co.uk"> <img src="https://mathszone.co.uk/wp-content/uploads/2015/11/cropped-image-1.gif" class="HLimg"> </a> </td>
         <td> A simple hit the button game to work on number bonds, multiplication and even decimals. </td>
       </tr>
       <tr>
-        <td> Splat Square </td>
+        <td> <a href="https://www.primarygames.co.uk/SplatSquares_WebGL/index.html"> <img src="https://www.primarygames.co.uk/newscreens/splatsquare.png" class="HLimg"> </a> </td>
         <td> Splat square. An interactive 100 square. Children can use this to work on number bonds or highlight
           multiplication tables. </td>
       </tr>
       <tr>
-        <td> Power Lines </td>
+        <td> <a href="https://www.primarygames.co.uk/tasters/powerlines1.html"> <img src="https://www.primarygames.co.uk/newscreens/powerlines.png" class="HLimg"> </a> </td>
         <td> Power lines. A probem solving game with addition </td>
       </tr>
       <tr>
-        <td> Number Crunch </td>
+        <td> <a href="https://www.transum.org/Software/Game/Number_Saga/?Level=1"> <img src="https://www.transum.org/Go/Thumbnails324x200/1.gif" class="HLimg"> </a> </td>
         <td> Number Crunch. A game like candy crush but with numbers. </td>
       </tr>
       <tr>
-        <td> Mathsbot </td>
+        <td> <a href="https://mathsbot.com"> <img src="https://enigmamathshub.co.uk/wp-content/uploads/2020/05/Screenshot-2020-05-22-at-12.13.15.png" class="HLimg"> </a> </td>
         <td> Mathsbot. A website for teachers that can be used to create numeracy questions to practise at home. </td>
       </tr>
       <tr>
-        <td> ICT Games Maths </td>
+        <td> <a href="https://ictgames.com/mobilePage/index.html"> <img src="https://ictgames.com/mobilePage/images/mobileIcon.png" class="HLimg"> </a> </td>
         <td> ICT Games. More links to games to develop numeracy and literacy skills. </td>
       </tr>
       <tr>
-        <td> Maths Learning Centre </td>
+        <td> <a href="https://apps.mathlearningcenter.org/number-line/"> <img src="https://ressources-ecole-inclusive.org/wp-content/uploads/2022/04/The-math-learning-center-300x292.png" class="HLimg"> </a> </td>
         <td> Maths learning centre. A great number line tool that works with whole numbers, fractions and decimals.
         </td>
       </tr>
-      <tr>
-        <td> Hit The Button </td>
-        <td> A quick and easy game to practise addition, subtraction and multiplication tables. </td>
-      </tr>
+    
     </table>
 
-    <h2> English </h2>
-    <table>
+    <h2 onclick="hideTable('engTable')"> English </h2>
+    <table id="engTable">
       <tr>
         <th> Link </th>
         <th> Description </th>
       </tr>
       <tr>
-        <td> Scottish Book Trust </td>
+        <td> <a href="https://www.scottishbooktrust.com"> <img src="https://yt3.googleusercontent.com/ytc/AIf8zZSbO6_CdkXM6YsjhwjvAmedEAXJ9C7Bm-B0YI6z=s900-c-k-c0x00ffffff-no-rj" class="HLimg"> </a> </td>
         <td> Lots of reading and writing activities and competitions </td>
       </tr>
       <tr>
-        <td> National Literacy Trust </td>
+        <td> <a href="https://literacytrust.org.uk"> <img src="https://nlt.cdn.ngo/media/images/NLT_no_strapline_DH.2e16d0ba.fill-400x400.jpegquality-90.jpg" class="HLimg"> </a> </td>
         <td> Reading resources from the National Literacy Trust. </td>
       </tr>
       <tr>
-        <td> ICT Games English </td>
+        <td> <a href="https://ictgames.com/mobilePage/literacy.html"> <img src="https://ictgames.com/mobilePage/images/mobileIcon.png" class="HLimg"> </a> </td>
         <td> ICT Games. More links to games to develop numeracy and literacy skills. </td>
       </tr>
       <tr>
-        <td> Phonics Play </td>
+        <td> <a href="https://www.phonicsplay.co.uk"> <img src="https://www.phonicsplay.co.uk/images/opengraph/phonics.jpg" class="HLimg"> </a> </td>
         <td> Phonics Play. Some free games to help with phonics. </td>
       </tr>
     </table>

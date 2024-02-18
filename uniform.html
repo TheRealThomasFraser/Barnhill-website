@@ -9,6 +9,16 @@
 </head>
 
 <body>
+  <script> 
+    function hideSection(sectionID) {
+      var section = document.getElementById(sectionID);
+      if (section.style.display == "none") {
+      section.style.display = "";
+      } else {
+        section.style.display = "none"
+      }
+    }
+    </script>
 
   <!-- ------------------- Navigation ------------------- -->
 
@@ -41,8 +51,6 @@
 
   <!-- ------------------- Main Body ------------------- -->
 
-  <!-- let me cook here -->
-
   <div class="mainBody"> <!-- Opens div class mainBody -->
     <div class="content">
 
@@ -53,9 +61,9 @@
         sizing conventions. We encourage our pupils to wear whatever they feel most comfortable in within our
         regulations. If you have any queries about uniform, feel free to <a href="contact.html"> contact </a> us.</p>
 
-      <h2> Torso </h2>
+      <h2 onclick="hideSection('torso')"> Torso </h2>
 
-      <div class="uniformContainer">
+      <div class="uniformContainer" id="torso">
         <a href="https://www.border-embroideries.co.uk/barnhill-primary-school-polo-101208.html" class="productCard">
           <img
             src="https://www.border-embroideries.co.uk/pub/media/catalog/product/cache/faac27021abb5cb15a99a04d7c33b2c1/b/a/barnhill_ps_poloshirt.png">
@@ -106,9 +114,7 @@
           <p class="productCardInfo"> Barnhill Primary School Cardigan <br> £15.99 </p>
         </a>
 
-
-
-        <a href="https://www.border-embroideries.co.uk/barnhill-ps-45-striped-tie.html" class="productCard">
+        <a href="https://www.border-embroideries.co.uk/barnhill-ps-boys-blazer-217168.html" class="productCard">
           <img
             src="https://www.border-embroideries.co.uk/pub/media/catalog/product/cache/faac27021abb5cb15a99a04d7c33b2c1/b/a/barnhill_ss39_grey.jpg">
           <p class="productCardInfo"> Barnhill PS Boys Blazer <br> £37.99</p>
@@ -144,8 +150,6 @@
           <p class="productCardInfo"> Barnhill PS Reversible Jacket <br> £21.99</p>
         </a>
 
-
-
         <a href="https://www.border-embroideries.co.uk/barnhill-senior-sweatshirt-1-29-117616.html" class="productCard">
           <img
             src="https://www.border-embroideries.co.uk/pub/media/catalog/product/cache/faac27021abb5cb15a99a04d7c33b2c1/b/a/barnhill_snr_sshirt.jpg">
@@ -162,8 +166,9 @@
       </div>
 
 
-      <h2> Trousers & Skirts</h2>
-      <div class="uniformContainer">
+      <h2 onclick="hideSection('trsrSkirts')"> Trousers & Skirts</h2>
+
+      <div class="uniformContainer" id="trsrSkirts">
         <a href="https://www.border-embroideries.co.uk/she-innovation-boys-shorts.html" class="productCard">
           <img
             src="https://www.border-embroideries.co.uk/pub/media/catalog/product/cache/faac27021abb5cb15a99a04d7c33b2c1/8/a/8aaa4c1c7d6f1cabf2652b469bc28ee897e12390_2.jpg">
@@ -192,16 +197,16 @@
 
       </div>
 
-      <h2> Footwear</h2>
-      <div class="uniformContainer">
-        <a href="https://www.border-embroideries.co.uk/she-innovation-boys-shorts.html" class="productCard">
+      <h2 onclick="hideSection('footwear')"> Footwear</h2>
+      <div class="uniformContainer" id="footwear">
+        <a href="https://www.sportsdirect.com/back-to-school/school-footwear/black-school-shoes" class="productCard">
           <img src="https://www.sportsdirect.com/images/products/09308003_l.jpg">
           <p class="productCardInfo"> Black School Shoes<br> Prices Vary</p>
         </a>
       </div>
 
-      <h2> Misc</h2>
-      <div class="uniformContainer">
+      <h2 onclick="hideSection('misc')"> Misc</h2>
+      <div class="uniformContainer" id="misc">
         <a href="https://www.border-embroideries.co.uk/barnhill-ps-45-striped-tie.html" class="productCard">
           <img
             src="https://www.border-embroideries.co.uk/pub/media/catalog/product/cache/faac27021abb5cb15a99a04d7c33b2c1/1/b/1b8276a7acda9433acb1f19595304a05b5e8064a_3.png">
