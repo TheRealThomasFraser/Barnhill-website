@@ -17,6 +17,7 @@ body, html {
 .mainBody {
   position: relative;
   height: auto;
+  min-height: 100vh;
 }
 
 
