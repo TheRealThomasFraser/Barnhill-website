@@ -181,14 +181,14 @@
               
                   // get the last date of the month
                   let lastdate=new Date(year, month + 1, 0).getDate();
-              
+               
+            
                   // get the day of the last date of the month
                   let dayend=new Date(year, month, lastdate).getDay();
               
                   // get the last date of the previous month
                   let monthlastdate=new Date(year, month, 0).getDate();
-              
-                  let lit=""; // variable to store the generated calendar HTML
+                   let lit=""; // variable to store the generated calendar HTML
               
                   // loop to add the last dates of the previous month
                   for (let i=dayone; i > 0; i--) {
