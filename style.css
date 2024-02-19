@@ -80,6 +80,10 @@ width:200px;
 
 nav {
   display: block;
+ background-color:#309167;
+ border-bottom-style: solid;
+ border-color: rgb(0, 0, 0);
+  
 }
 
 nav ul {
@@ -148,7 +152,7 @@ h1 {
   display:inline;
 }
 h2 { 
-  color: rgb(255, 0, 128);
+  color: rgb(4, 76, 43);
   display:inline;
 }
 
@@ -304,9 +308,9 @@ border-collapse: collapse;
 .footer{
   position: absolute;
   left: 0;
- 
+  height: 20vh;
   width: 100%;
-  background-color: #F7B733;
+  background-color: #309167;;
   color: black;
   display: block;
   text-align: center;
