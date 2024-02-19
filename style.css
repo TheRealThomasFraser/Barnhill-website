@@ -19,27 +19,62 @@ body, html {
   height: auto;
 }
 
-/* ------------------- Header ------------------- */
 
-header {
-  background-image: url("headertest.jpeg");
-  /* Full height */
-  height: 100%;
+ /* ------------------- Header ------------------- */
+  
+ .bottom-divide-of-sch-img{
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgMzAgMCAzMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgNjAgMCA2MHoiLz48L2c+PC9zdmc+);
+  background-size: 200% 100px;
+  bottom: 0;
+  height: 100px;
+  z-index: 10;
+    z-index: 1;
+    background-repeat: no-repeat;
+   
+    
+} 
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+
+div.hero-banner-container {
+background-image: url("images/prim-2.jpg" )!important;
+position: relative;
+background-color: #fff;
+background-position: 50%;
+background-size: 100%;
+background-size: cover;
+}
+
+.hero-banner-column{
+min-height: 70vh;
 }
 
 header h1 {
-  color: white;
+color: #ffffff;
 }
 
 header img {
-  height: 200px;
-  width:200px;
+height: 200px;
+width:200px;
 }
+
+/* ------------------- the welcome image that appears on every page ------------------- */
+
+.welcome-message-to-school{
+  text-align: center;
+ 
+  height: 200px;
+  margin-bottom: 50px;
+ 
+}
+
+.welcome-message-to-school h2 h1{
+  padding: 50px;
+  font-family: Bodoni;  
+}
+
+
+
 
 /* ------------------- Navigation ------------------- */
 

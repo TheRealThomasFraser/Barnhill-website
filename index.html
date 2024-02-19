@@ -2,6 +2,82 @@
 <html>
 
 <head>
+    <style>
+
+         .row2{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+            padding: 70px;
+            text-align: center;
+            list-style: none;
+            font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+        }
+        .column1{
+          text-align: center;
+          background: #309167;
+          padding: 40px;
+          box-shadow: 10px 10px #FDE992;
+        }
+
+        .column1 ul{
+          font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+            list-style: none;
+            margin-bottom: 40px;
+           
+           
+        }
+        .column2{
+            display: inline;
+            color: black;
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+
+        }
+
+         /* Create three equal columns that floats next to each other */
+        .column {
+            color: black;
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+    
+        
+        /* Clear floats after the columns */
+        .row2::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+  
+        .column, h2 {
+            color:black;
+        }
+
+       .column{
+            
+            float: left;
+            width: 39.33%;
+            padding: 15px;
+            margin: 40px;
+  
+        }
+
+        .avatar{
+            border-radius: 50%;
+            box-shadow: 10px 10px #FDE992;
+            padding: 20px;
+            
+        }
+            
+                
+        
+                
+
+
+        </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Home</title>
@@ -12,9 +88,10 @@
   
 <!-- ------------------- Navigation ------------------- -->
 
-<header>
+
 
   <nav>
+
 
     <ul>
 
@@ -31,38 +108,65 @@
       <li><a href="news.html">News</a></li>
       <li><a href="homeLearning.html">Home Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <div> <a href="index.html"><img id="logo" style="width: 10vh; float: right; margin-right: 15%;" src="images/bpslogo.png"></a> </div>
+     
 
     </ul>
+    
 
-  </nav> 
-  <div> <a href="index.html"><img id="logo" src="bpslogo.png"></a> </div>
-  <h1> Barnhill Primary School </h1>
+  </nav>
+  <header > 
+   
+ 
+</div>
+
+ 
+
+
+
 </header>
+
 
 <!-- ------------------- Main Body ------------------- -->
 
-<div class="mainBody"> <!-- Opens div class mainBody -->
-  <div class="content"> 
 
-    <h2> Announcements:</h2>
+
+
+<div class="hero-banner-container">
+
+  <div class="hero-banner-column"></div>
+
+    
+ 
+ 
+  <div class="bottom-divide-of-sch-img">
+  </div>
+</div>
+<div class="mainBody"> <!-- Opens div class mainBody -->
+
+   
+    <div class="welcome-message-to-school">
+            
+
+        <h2 style="           font-size: 50px;">Welcom to Barnhill Primary school</h2>
+        
+        <p style="font-size: 17px;">We are situated in the suburb of Broughty Ferry, Dundee.  We have a roll of over 400 pupils in P1-7 with another 60 children who attend the nursery. </p>
+    </div>
+
+ 
+   
+ 
+
+    
 
     <div class="slideshow-container">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="tempTopBar.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
       
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="bpslogo.png" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
+   
       
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <img src="headertest.jpeg" style="width:100%">
+        <img src="images/headertest.jpeg" style="width:100%">
         <div class="text">Caption Three</div>
       </div>
       
@@ -72,7 +176,7 @@
       </div>
       <br>
       
-      <div style="text-align:center">
+      <div style="text-align:center; margin-bottom: 20px;">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
@@ -106,44 +210,80 @@
           dots[slideIndex-1].className += " active";
         }
         </script>
+    
+    
 
-    <h2> Who are we?</h2>
+  <div class="content"> 
+   
+   
+    
+        <!--Main Content-->
+        <div class="row1">
+            <div class="column1" >
+            
+                <ul >
+                  <li><h1>Our aims are to:</h1></li>
+                  <Br>
+                  <li > To create a welcoming, safe and happy school where everyone is valued. </li>
+                  <Br>
+                  <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
+                  <Br>
+                  <li> To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to meet the needs of each individual pupil. </li>
+                  <Br>
+                  <li> To ensure that the whole school community feel included and are proud of their work and achievements both in and out of school. </li>
+                  <Br>
+                  <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
+                  <Br>
+                  <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
+                </ul>
 
-    <p>We are situated in the suburb of Broughty Ferry, Dundee.  We have a roll of over 400 pupils in P1-7 with another 60 children who attend the nursery. </p>
+            </div>
+        </div>
 
-    <h2> Our Values:</h2>
-
-    <!-- BRILL image -->
-    <ul> 
-      <li> Believe -</li>
-      <li> Respect -</li>
-      <li> Include -</li>
-      <li> Learn and Achieve -</li>
-      <li> Look After Each Other -</li>
-    </ul>
-
-    <h2> Our Aims: </h2>
-
-    <ul>
-      <li> To create a welcoming, safe and happy school where everyone is valued. </li>
-      <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
-      <li> To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to meet the needs of each individual pupil. </li>
-      <li> To ensure that the whole school community feel included and are proud of their work and achievements both in and out of school. </li>
-      <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
-      <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
-    </ul>
-
-    <h2> Head Teacher's Message: </h2>
-<h1 style="display: block;"> AAAAA</h1>
-    <!-- Head Teacher Image and Message -->
+        <div class="row2">
+            <div class="column" >
+             
+             
+              <img src="images/woman.png" alt="Avatar" class="avatar">
+            </div>
+            
+            <div class="row">
+                <div class="column2">
+                  <img src="images/B.png" style="width:15%" onclick="myFunction(this);">
+                </div>
+    
+                <div class="column2">
+                  <img src="images/I.png" alt="Mountains" style="width:15%" onclick="myFunction(this);">
+                </div>
+                <div class="column2">
+                  <img src="images/L.png" alt="Lights"style="width:15%" onclick="myFunction(this);">
+                </div>
+                <div class="column2">
+                    <img src="images/L.png" alt="Lights" style="width:15%" onclick="myFunction(this);">
+                  </div>
+              </div>
+            
+            
+          </div>
+      
+            
+     
+         
+            
+            
 
   </div>
+</div>
+ 
 
 <!-- ------------------- Footer ------------------- -->
 
+
     <div class="footer"> <!-- Opens div class footer -->
+     
     <footer>
       <div class="footerLeft"> <!-- Opens div class footerLeft -->
+ 
       <!--float this left-->
       <h3> Useful Links</h3>
       <a href = "https://twitter.com/BarnhillPrimary"><img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt= "X (Twitter)" style = "width: 60px; height:60px;"></a>
@@ -163,8 +303,10 @@
     
     </footer>
   </div> <!-- Closes div class footer -->
+
 </div> <!-- Closes div class mainBody -->
 
  </body>
+
 
 </html>
