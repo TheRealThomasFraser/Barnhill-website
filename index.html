@@ -2,82 +2,6 @@
 <html>
 
 <head>
-    <style>
-
-         .row2{
-            width: 80%;
-            margin: auto;
-            margin-bottom: 50px;
-            padding: 70px;
-            text-align: center;
-            list-style: none;
-            font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-        }
-        .column1{
-          text-align: center;
-          background: #309167;
-          padding: 40px;
-          box-shadow: 10px 10px #FDE992;
-        }
-
-        .column1 ul{
-          font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-            list-style: none;
-            margin-bottom: 40px;
-           
-           
-        }
-        .column2{
-            display: inline;
-            color: black;
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-
-        }
-
-         /* Create three equal columns that floats next to each other */
-        .column {
-            color: black;
-            float: left;
-            width: 33.33%;
-            padding: 15px;
-        }
-    
-        
-        /* Clear floats after the columns */
-        .row2::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-  
-        .column, h2 {
-            color:black;
-        }
-
-       .column{
-            
-            float: left;
-            width: 39.33%;
-            padding: 15px;
-            margin: 40px;
-  
-        }
-
-        .avatar{
-            border-radius: 50%;
-            box-shadow: 10px 10px #FDE992;
-            padding: 20px;
-            
-        }
-            
-                
-        
-                
-
-
-        </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Home</title>
@@ -85,17 +9,19 @@
 </head>
 
 <body>
-  
-<!-- ------------------- Navigation ------------------- -->
 
+
+  <!-- ------------------- Navigation ------------------- -->
 
 
   <nav>
 
-
     <ul>
-      <div> <a href="index.html"><img id="logo" style="width: 10vh; float: left; margin-right: 15%;" src="images/bpslogo.png"></a> </div>
+
+      <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
+
       <li><a href="index.html">Home</a></li>
+
       <li class="dropdown">
         <span class="aboutBtn">About </span>
         <div class="dropdown-content"> <!-- Opens div class dropdown-content-->
@@ -105,211 +31,243 @@
           <a href="uniform.html">Uniform</a>
         </div> <!-- Closes div class dropdown-content -->
       </li>
+
       <li><a href="news.html">News</a></li>
       <li><a href="homeLearning.html">Home Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
-      
-     
 
     </ul>
-    
-
   </nav>
-  <header > 
-   
- 
-</div>
-
- 
 
 
-
-</header>
-
-
-<!-- ------------------- Main Body ------------------- -->
+  <!-- ------------------- Index Header ------------------- -->
 
 
+  <div id="hero-banner-container"> <!-- Opens div ID hero-banner-container -->
+
+    <div id="hero-banner-column"> <!-- Opens div ID hero-banner-column -->
+
+    </div> <!-- Closes div ID hero-banner-column -->
+
+    <div id="bottom-divide-of-sch-img"> <!-- Opens div ID bottom-divide-of-sch-img -->
+
+    </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+
+  </div> <!-- Closes div ID hero-banner-container -->
 
 
-<div class="hero-banner-container">
+  <!-- ------------------- Welcome ------------------- -->
 
-  <div class="hero-banner-column"></div>
 
-    
- 
- 
-  <div class="bottom-divide-of-sch-img">
-  </div>
-</div>
-<div class="mainBody"> <!-- Opens div class mainBody -->
+  <div class="mainBody"> <!-- Opens div class mainBody -->
 
-   
-    <div class="welcome-message-to-school">
-            
+    <div class="content"> <!-- Opens div class content -->
 
-        <h2 style="           font-size: 50px;">Welcome to Barnhill Primary school</h2>
-        
-        <p style="font-size: 17px;">We are situated in the suburb of Broughty Ferry, Dundee.  We have a roll of over 400 pupils in P1-7 with another 60 children who attend the nursery. </p>
-    </div>
+      <div class="welcomeMsg"> <!-- Opens div class welcomeMsg -->
 
- 
-   
- 
+        <h2>Welcome to Barnhill Primary school</h2>
 
-    
+        <p>We are situated in the suburb of Broughty Ferry, Dundee. We have a roll of over 400
+          pupils in P1-7 with another 60 children who attend the nursery. </p>
 
-    <div class="slideshow-container">
+      </div> <!-- Closes div class welcomeMsg -->
 
-      
-   
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/headertest.jpeg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-      
-      </div>
-      <br>
-      
-      <div style="text-align:center; margin-bottom: 20px;">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
 
-      <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-    
-    
+      <!-- ------------------- Carousel------------------- -->
 
-  <div class="content"> 
-   
-   
-    
-        <!--Main Content-->
-        <div class="row1">
-            <div class="column1" >
-            
-                <ul >
-                  <li><h1>Our aims are to:</h1></li>
-                  <Br>
-                  <li > To create a welcoming, safe and happy school where everyone is valued. </li>
-                  <Br>
-                  <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
-                  <Br>
-                  <li> To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to meet the needs of each individual pupil. </li>
-                  <Br>
-                  <li> To ensure that the whole school community feel included and are proud of their work and achievements both in and out of school. </li>
-                  <Br>
-                  <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
-                  <Br>
-                  <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
-                </ul>
 
-            </div>
+      <div class="slideshow-container"> <!-- Opens div class welcomeMsg -->
+
+        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
+          <div class="numbertext">1 / 3</div>
+          <img src="tempTopBar.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
         </div>
 
-        <div class="row2">
-            <div class="column" >
-             
-             
-              <img src="images/woman.png" alt="Avatar" class="avatar">
-            </div>
-            
-            <div class="row">
-                <div class="column2">
-                  <img src="images/B.png" style="width:15%" onclick="myFunction(this);">
-                </div>
-                <div class="column2">
-                  <img src="images/R.png" style="width:15%" onclick="myFunction(this);">
-                </div>
-    
-                <div class="column2">
-                  <img src="images/I.png" alt="Mountains" style="width:15%" onclick="myFunction(this);">
-                </div>
-                <div class="column2">
-                  <img src="images/L.png" alt="Lights"style="width:15%" onclick="myFunction(this);">
-                </div>
-                <div class="column2">
-                    <img src="images/L.png" alt="Lights" style="width:15%" onclick="myFunction(this);">
-                  </div>
-              </div>
-            
-            
+        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
+          <div class="numbertext">2 / 3</div>
+          <img src="bpslogo.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
+          <div class="numbertext">3 / 3</div>
+          <img src="headertest.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+      </div>
+      <br>
+
+      <div class="dots" > <!-- Opens div class welcomeMsg -->
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- ------------------- Aims ------------------- -->
+
+      <div class="aims">
+
+        <ul>
+          <li>
+            <h1>Our Aims Are:</h1>
+          </li>
+
+          <li> To create a welcoming, safe and happy school where everyone is valued. </li>
+
+          <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
+
+          <li> To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to
+            meet the needs of each individual pupil. </li>
+
+          <li> To ensure that the whole school community feel included and are proud of their work and achievements
+            both in and out of school. </li>
+
+          <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
+
+          <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
+        </ul>
+
+      </div>
+
+      <!-- ------------------- Brill ------------------- -->
+
+      <div id="brill">
+        <div id="BDiv" style="background-color: red; width: 100px;">
+          <img src="images/B.png" class="letter" id="B" onclick="wordShow('believe', 'BDiv')">
+          <p id="believe" style="display: none;"> elieve </p>
+        </div>
+
+        <div id="RDiv" style="background-color: orange; width: 100px;">
+          <img src="images/R.png" class="letter" id="R" onclick="wordShow('respect', 'RDiv')">
+          <p id="respect" style="display: none;"> espect </p>
+        </div>
+
+
+        <div id="IDiv" style="background-color: yellow; width: 100px;">
+          <img src="images/I.png" class="letter" id="I" onclick="wordShow('include', 'IDiv')">
+          <p id="include" style="display: none;"> nclude </p>
+        </div>
+
+        <div id="LDiv" style="background-color: green; width: 100px;">
+          <img src="images/L.png" class="letter" id="L" onclick="wordShow('learn', 'LDiv')">
+          <p id="learn" style="display: none;"> earn and achieve</p>
+        </div>
+
+        <div id="L2Div" style="background-color: blue; width: 100px;">
+          <img src="images/L.png" class="letter" id="L2" onclick="wordShow('look', 'L2Div')">
+          <p id="look" style="display: none;"> ook after each other</p>
+        </div>
+
+      </div>
+
+      <!-- ------------------- Head Teacher Message ------------------- -->
+
+      <div id="HTmsg">
+        <h2> Head Teacher's Message </h2>
+        <div id="HTmain">
+          <img src="images/woman.png" alt="Picture of head teacher" id="HTimg">
+          <div id="HTtext">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.</p>
           </div>
-      
-            
-     
-         
-            
-            
+        </div>
+      </div>
 
-  </div>
-</div>
- 
+    </div>
 
-<!-- ------------------- Footer ------------------- -->
+    <!-- ------------------- Footer ------------------- -->
 
 
     <div class="footer"> <!-- Opens div class footer -->
-     
-    <footer>
-      <div class="footerLeft"> <!-- Opens div class footerLeft -->
- 
-      <!--float this left-->
-      <h3> Useful Links</h3>
-      <a href = "https://twitter.com/BarnhillPrimary"><img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt= "X (Twitter)" style = "width: 60px; height:60px;"></a>
-      <a href = "https://secure.glowscotland.org.uk/login/login.htm"><img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt= "Glow RM Unify" style = "width: 60px; height:60px;"></a>
-      <a href = "https://www.dundeecity.gov.uk/"><img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt= "Dundee City Council" style = "width: 60px; height:60px;"></a>
-      <a href = "http://www.educationscotland.gov.uk/"><img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt= "Education Scotland" style = "width: 60px; height:60px;"></a>
-      <a href = "https://app.parentpay.com/public/client/security/v2/#/login"><img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt= "Parent Pay Portal" style = "width: 60px; height:60px;"></a>
-      </div> <!-- Closes div class footerLeft -->
-      <!--float this right-->
-      <div class="footerRight"> <!-- Opens div class footerRight -->
-      <button>Settings</button>
-      <p>Contact Us
-        other contact info</p>
-  
-      <p>&#169; Barnhill Primary School 2023</p>
-      </div> <!-- Closes div class footerRight -->
-    
-    </footer>
-  </div> <!-- Closes div class footer -->
 
-</div> <!-- Closes div class mainBody -->
+      <footer>
+        <div class="footerLeft"> <!-- Opens div class footerLeft -->
 
- </body>
+          <!--float this left-->
+          <h3> Useful Links</h3>
+          <a href="https://twitter.com/BarnhillPrimary"><img
+              src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
+              style="width: 60px; height:60px;"></a>
+          <a href="https://secure.glowscotland.org.uk/login/login.htm"><img
+              src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
+              style="width: 60px; height:60px;"></a>
+          <a href="https://www.dundeecity.gov.uk/"><img
+              src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
+              style="width: 60px; height:60px;"></a>
+          <a href="http://www.educationscotland.gov.uk/"><img
+              src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
+              style="width: 60px; height:60px;"></a>
+          <a href="https://app.parentpay.com/public/client/security/v2/#/login"><img
+              src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
+              style="width: 60px; height:60px;"></a>
+        </div> <!-- Closes div class footerLeft -->
+        <!--float this right-->
+        <div class="footerRight"> <!-- Opens div class footerRight -->
+          <button>Settings</button>
+          <p>Contact Us </p>
+
+          <p>&#169; Barnhill Primary School 2023</p>
+        </div> <!-- Closes div class footerRight -->
+
+      </footer>
+    </div> <!-- Closes div class footer -->
+
+  </div> <!-- Closes div class mainBody -->
+
+  <!-- ------------------- Javascript ------------------- -->
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    function wordShow(word, letterDiv) {
+      var word = document.getElementById(word);
+      var div = document.getElementById(letterDiv);
+      if (word.style.display == "none") {
+
+        word.style.display = "inline";
+        div.style.width = "100%";
+
+      } else {
+        word.style.display = "none"
+        div.style.width = "100px";
+      }
+    }
+
+  </script>
+</body>
 
 
 </html>
