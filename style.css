@@ -1,5 +1,6 @@
 /* ------------------- General ------------------- */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +18,17 @@ html {
 
 .mainBody {
   position: relative;
-  height: auto;
+  height: 100vh;
   background-color: white;
+}
+
+.content {
+  display: block;
 }
 
 
 /* ------------------- Header ------------------- */
+
 
 header {
   background-image: url(images/tempTopBar.jpg);
@@ -32,9 +38,6 @@ header {
  background-size: cover;
 
 }
-
-
-
 
 /* ------------------- Navigation ------------------- */
 
@@ -112,32 +115,20 @@ nav #dropdown-content a:hover {
 }
 
 
-
 /* ------------------- Headings ------------------- */
+
 
 h1 {
   display: inline;
 }
 
 h2 {
-  color: rgb(4, 76, 43);
   display: inline;
 }
 
+
 /* ------------------- Tables ------------------- */
 
-.gridContainer {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  grid-column-gap: 50px;
-}
-
-.gridHeader,
-.gridTable {
-
-  padding: 20px;
-}
 
 table,
 th,
@@ -147,58 +138,16 @@ td {
   border-collapse: collapse;
 }
 
-.uniformContainer {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 0px;
-  grid-column-gap: 0px;
-  width: 100%;
-
-}
-
-.productCard {
-
-  height: 300px;
-}
-
-.uniformContainer img {
-
-  width: 250px;
-  height: 250px;
-}
-
-.productCardInfo {
-  display: none;
-}
-
-.productCard:hover {
-  .productCardInfo {
-    display: block;
-  }
-
-}
-
-.HLimg {
-  width: 100px;
-  height: 100px;
-}
-
-/* ------------------- Carousel -------------------  */
-
-
 
 /* ------------------- Footer ------------------- */
 
-.content {
-  display: block;
-}
 
 .footer {
   position: absolute;
   left: 0;
   width: 100%;
   background-color: #309167;
-  ;
+  bottom: 0;
   color: black;
   display: block;
   text-align: center;
@@ -219,6 +168,10 @@ td {
 .footerLeft img {
   padding-right: 50px;
 }
+
+
+/* ------------------- Index ------------------- */
+
 
 #bottom-divide-of-sch-img {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgMzAgMCAzMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgNjAgMCA2MHoiLz48L2c+PC9zdmc+);
@@ -409,8 +362,6 @@ td {
   z-index: 1;
 }
 
-
-
 #brill {
   border-bottom: 10px solid #FDE992;
   border-top: 10px solid #FDE992;
@@ -429,3 +380,72 @@ td {
 .dots {
   text-align: center;
 }
+
+/* ------------------- FAQ ------------------- */
+
+/* ------------------- Dates ------------------- */
+
+/* ------------------- Staff ------------------- */
+
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 50px;
+}
+
+.gridHeader,
+.gridTable {
+
+  padding: 20px;
+}
+
+
+/* ------------------- Uniform ------------------- */
+
+
+.uniformContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0px;
+  grid-column-gap: 0px;
+  width: 100%;
+
+}
+
+.productCard {
+
+  height: 300px;
+}
+
+.uniformContainer img {
+
+  width: 250px;
+  height: 250px;
+}
+
+.productCardInfo {
+  display: none;
+}
+
+.productCard:hover {
+  .productCardInfo {
+    display: block;
+  }
+
+}
+
+
+/* ------------------- News ------------------- */
+
+/* ------------------- Home Learning ------------------- */
+
+
+.HLimg {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* ------------------- Contact ------------------- */
