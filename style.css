@@ -126,6 +126,10 @@ h2 {
   display: inline;
 }
 
+#pageTitle {
+  font-size: 45px;
+}
+
 
 /* ------------------- Tables ------------------- */
 
@@ -382,6 +386,17 @@ td {
 }
 
 /* ------------------- FAQ ------------------- */
+
+#question {
+  margin: auto;
+  background-color: #309167;
+}
+
+#answer {
+  margin: auto;
+  background-color: #FDE992;
+}
+
 
 /* ------------------- Dates ------------------- */
 
