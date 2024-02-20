@@ -388,17 +388,17 @@ td {
 
 /* ------------------- FAQ ------------------- */
 
-#QnA {
+.QnA {
   margin-top: 20px;
   background-color: #717171;
 }
 
-#question {
+.question {
 
   background-color: #309167;
 }
 
-#answer {
+.answer {
 
   background-color: #FDE992;
 }
