@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  <script src="myscripts.js"></script>
 
   <!-- ------------------- Navigation ------------------- -->
 
@@ -23,7 +23,7 @@
       <li><a href="index.html">Home</a></li>
 
       <li class="dropdown">
-        <span class="aboutBtn">About </span>
+        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
         <div class="dropdown-content"> <!-- Opens div class dropdown-content-->
           <a href="faq.html">FAQ</a>
           <a href="dates.html">Dates</a>
@@ -76,41 +76,43 @@
       <!-- ------------------- Carousel------------------- -->
 
 
-      <div class="slideshow-container"> <!-- Opens div class welcomeMsg -->
+      <div class="slideshow-container"> <!-- Opens div class slideshow-container -->
 
         <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">1 / 3</div>
+          <div class="numbertext">1 / 3</div> <!--  Opens and Closes div class numbertext -->
           <img src="tempTopBar.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
+          <div class="text">Caption Text</div> <!--  Opens and Closes div class text -->
+        </div> <!--  Closes div class mySlides fade -->
 
         <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">2 / 3</div>
+          <div class="numbertext">2 / 3</div> <!--  Opens and Closes div class numbertext -->
           <img src="bpslogo.png" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
+          <div class="text">Caption Two</div> <!--  Opens and Closes div class text -->
+        </div> <!--  Closes div class mySlides fade -->
 
         <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">3 / 3</div>
+          <div class="numbertext">3 / 3</div> <!--  Opens and Closes div class numbertext -->
           <img src="headertest.jpeg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
+          <div class="text">Caption Three</div> <!--  Opens and Closes div class text -->
+        </div> <!--  Closes div class mySlides fade -->
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
 
-      </div>
+      </div> <!-- Closes div class slideshow-container -->
       <br>
 
-      <div class="dots" > <!-- Opens div class welcomeMsg -->
+      <div class="dots" > <!-- Opens div class dots -->
+
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+
+      </div> <!-- Closes div class dots -->
 
       <!-- ------------------- Aims ------------------- -->
 
-      <div class="aims">
+      <div class="aims"> <!-- Opens div class aims -->
 
         <ul>
           <li>
@@ -132,38 +134,38 @@
           <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
         </ul>
 
-      </div>
+      </div> <!-- Closes div class aims -->
 
       <!-- ------------------- Brill ------------------- -->
 
-      <div id="brill">
-        <div id="BDiv" style="background-color: red; width: 100px;">
+      <div id="brill"> <!-- Opens div id brill -->
+
+        <div id="BDiv" style="background-color: red; width: 100px;"> <!-- Opens div id BDiv -->
           <img src="images/B.png" class="letter" id="B" onclick="wordShow('believe', 'BDiv')">
-          <p id="believe" style="display: none;"> elieve </p>
-        </div>
+          <p id="believe" style="display: none;"> elieve </p> <!-- Closes div id BDiv -->
+        </div> 
 
-        <div id="RDiv" style="background-color: orange; width: 100px;">
+        <div id="RDiv" style="background-color: orange; width: 100px;"> <!-- Opens div id RDiv -->
           <img src="images/R.png" class="letter" id="R" onclick="wordShow('respect', 'RDiv')">
-          <p id="respect" style="display: none;"> espect </p>
+          <p id="respect" style="display: none;"> espect </p> <!-- Closes div id RDiv -->
         </div>
 
-
-        <div id="IDiv" style="background-color: yellow; width: 100px;">
+        <div id="IDiv" style="background-color: yellow; width: 100px;"> <!-- Opens div id IDiv -->
           <img src="images/I.png" class="letter" id="I" onclick="wordShow('include', 'IDiv')">
-          <p id="include" style="display: none;"> nclude </p>
+          <p id="include" style="display: none;"> nclude </p> <!-- Closes div id IDiv -->
         </div>
 
-        <div id="LDiv" style="background-color: green; width: 100px;">
+        <div id="LDiv" style="background-color: green; width: 100px;"> <!-- Opens div id LDiv -->
           <img src="images/L.png" class="letter" id="L" onclick="wordShow('learn', 'LDiv')">
-          <p id="learn" style="display: none;"> earn and achieve</p>
+          <p id="learn" style="display: none;"> earn and achieve</p> <!-- Closes div id LDiv -->
         </div>
 
-        <div id="L2Div" style="background-color: blue; width: 100px;">
+        <div id="L2Div" style="background-color: blue; width: 100px;"> <!-- Opens div id L2Div -->
           <img src="images/L.png" class="letter" id="L2" onclick="wordShow('look', 'L2Div')">
-          <p id="look" style="display: none;"> ook after each other</p>
+          <p id="look" style="display: none;"> ook after each other</p> <!-- Closes div id L2Div -->
         </div>
 
-      </div>
+      </div> <!-- Closes div id brill -->
 
       <!-- ------------------- Head Teacher Message ------------------- -->
 
@@ -177,11 +179,11 @@
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
               mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
+          </div> <!-- Closes div id HTmsg -->
+        </div> <!-- Closes div id HTmain -->
+      </div> <!-- Closes div id HTtext -->
 
-    </div>
+    </div> <!-- Closes class content-->
 
     <!-- ------------------- Footer ------------------- -->
 

@@ -103,9 +103,7 @@ nav .dropdown-content a:hover {
   color: black;
 }
 
-nav .dropdown:hover .dropdown-content {
-  display: block;
-}
+
 
 /* ------------------- Headings ------------------- */
 
