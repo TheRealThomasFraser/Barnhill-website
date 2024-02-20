@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-  <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>FAQ</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  
-  <body>
-    <script src="script.js"></script>
-    <div class="mainBody"> <!-- Opens div class mainBody -->
-  
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FAQ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="mainBody"> <!-- Opens div class mainBody -->
+
     <!-- ------------------- Navigation ------------------- -->
-  <header> <h1> Barnhill Primary School </h1> </header>
+    <header>
+      <h1> Barnhill Primary School </h1>
+    </header>
     <nav>
-  
+
       <ul>
-  
+
         <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
-  
+
         <li><a href="index.html">Home</a></li>
-  
+
         <li class="dropdown">
           <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
           <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
@@ -31,35 +33,46 @@
             <a href="uniform.html">Uniform</a>
           </div> <!-- Closes div class dropdown-content -->
         </li>
-  
+
         <li><a href="news.html">News</a></li>
         <li><a href="homeLearning.html">Home Learning</a></li>
         <li><a href="contact.html">Contact</a></li>
-  
+
       </ul>
-      </nav>
+    </nav>
 
     <!-- ------------------- Main Body ------------------- -->
     <div class="content"> <!-- Opens div class content -->
-    
 
-      <h1 id="pageTitle"> Frequently asked questions</h1>
 
-      <h2 class="question"> When does the school open and close?</h2>
-      <p>The school is open from 09:00 to 15:15, Monday to Friday.</p>
+      <h1 id="pageTitle"> Frequently Asked Questions</h1>
 
-      <h2 class="question"> When are the pupil's break and lunch times?</h2>
-      <p class="answer">Break is from 11:10 to 11:30<br>Lunch is from 13:15 to 14:00</p>
+      <div class="QnA">
+        <h2 class="question"> When does the school open and close?</h2>
+        <p>The school is open from 09:00 to 15:15, Monday to Friday.</p>
+      </div>
 
-      <h2 class="question">School Dinners</h2>
-      <p class="answer">School Dinners are free for P1-5 and cost £2.10 per day for P6-7. Please follow the link to Parent Pay if you
-        do not already have an account. Children make a choice of RED, BLUE or ORANGE lunch in the morning, in order
-        that they can have the dinner of their choice. Dinners can be ordered from home up to 4 weeks in advance on
-        Parent Pay. Menus are updated regularly by Tayside Contracts.</p><br>
+      <div class="QnA">
+        <h2 class="question"> When are the pupil's break and lunch times?</h2>
+        <p class="answer">Break is from 11:10 to 11:30<br>Lunch is from 13:15 to 14:00</p>
+      </div>
 
-      <h2 class="question">Strikes or Snow days</h2>
-      <p class="answer">In the case of the school being shut due to dangerous weather conditions or strikes, parents will recieve a
-        text in the morning at 08:00. Children may continue to learn via the links on our <a href="homeLearning.html"> Home Learning page</a> if they so wish.</p>
+      <div class="QnA">
+        <h2 class="question">School Dinners</h2>
+        <p class="answer">School Dinners are free for P1-5 and cost £2.10 per day for P6-7. Please follow the link to
+          Parent Pay if you
+          do not already have an account. Children make a choice of RED, BLUE or ORANGE lunch in the morning, in order
+          that they can have the dinner of their choice. Dinners can be ordered from home up to 4 weeks in advance on
+          Parent Pay. Menus are updated regularly by Tayside Contracts.</p>
+      </div>
+
+      <div class="QnA">
+        <h2 class="question">Strikes or Snow days</h2>
+        <p class="answer">In the case of the school being shut due to dangerous weather conditions or strikes, parents
+          will recieve a
+          text in the morning at 08:00. Children may continue to learn via the links on our <a href="homeLearning.html">
+            Home Learning page</a> if they so wish.</p>
+      </div>
 
       <p> For more information on the school uniform click <a href="uniform.html">here</a> <br>For more information on
         our privacy policy, click <a
