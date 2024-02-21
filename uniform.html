@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-  <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Uniform</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  
-  <body>
-    <script src="script.js"></script>
-  
-    <!-- ------------------- Navigation ------------------- -->
-  <header> <h1> Barnhill Primary School </h1> </header>
-    <nav>
-  
-      <ul>
-  
-        <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
-  
-        <li><a href="index.html">Home</a></li>
-  
-        <li class="dropdown">
-          <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
-          <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
-            <a href="faq.html">FAQ</a>
-            <a href="dates.html">Dates</a>
-            <a href="staff.html">Staff</a>
-            <a href="uniform.html">Uniform</a>
-          </div> <!-- Closes div class dropdown-content -->
-        </li>
-  
-        <li><a href="news.html">News</a></li>
-        <li><a href="homeLearning.html">Home Learning</a></li>
-        <li><a href="contact.html">Contact</a></li>
-  
-      </ul>
-      </nav>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Uniform</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <!-- ------------------- Navigation ------------------- -->
+  <header>
+    <h1> Barnhill Primary School </h1>
+  </header>
+  <nav>
+
+    <ul>
+
+      <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
+
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
+        <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
+          <a href="faq.html">FAQ</a>
+          <a href="dates.html">Dates</a>
+          <a href="staff.html">Staff</a>
+          <a href="uniform.html">Uniform</a>
+        </div> <!-- Closes div class dropdown-content -->
+      </li>
+
+      <li><a href="news.html">News</a></li>
+      <li><a href="homeLearning.html">Home Learning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
 
   <!-- ------------------- Main Body ------------------- -->
 
   <div class="mainBody"> <!-- Opens div class mainBody -->
     <div class="content">
 
-      <h1> Uniform </h1>
+      <h1 id="pageTitle"> Uniform </h1>
       <p> At Barnhill, we believe that uniform plays an important part in unifying our pupils both together and with the
         school. We offer a range of official school uniform items in collaboration with BEUniforms and we allow some
         general formal attire. Please note that the terms "Boys" and "Girls' are included below to denote standard
@@ -215,16 +217,16 @@
 
 
     </div>
-    <script> 
+    <script>
       function hideSection(sectionID) {
         var section = document.getElementById(sectionID);
         if (section.style.display == "none") {
-        section.style.display = "";
+          section.style.display = "";
         } else {
           section.style.display = "none"
         }
       }
-      </script>
+    </script>
 
     <!-- ------------------- Footer ------------------- -->
 

@@ -23,7 +23,7 @@ html {
 }
 
 .content {
-  
+
   display: block;
 }
 
@@ -36,7 +36,7 @@ header {
   bottom: 0;
   height: 200px;
   background-repeat: no-repeat;
- background-size: cover;
+  background-size: cover;
 
 }
 
@@ -151,7 +151,7 @@ td {
 
 
 .footer {
-position: absolute;
+  position: absolute;
   left: 0;
   width: 100%;
   background-color: #309167;
@@ -475,16 +475,18 @@ position: absolute;
 
 #location {
   width: 100vh;
-  background-color:#309167;
+  background-color: #309167;
   margin: auto;
-  border:10px solid #FDE992;
+  border: 10px solid #FDE992;
   border-collapse: collapse;
 }
+
 #map {
-  border:5px solid #FDE992;
+  border: 5px solid #FDE992;
   border-collapse: collapse;
-margin: 10%;
+  margin: 10%;
 }
-#location p{
+
+#location p {
   text-align: center;
 }
