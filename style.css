@@ -18,11 +18,12 @@ html {
 
 .mainBody {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100% - 86px);
   background-color: white;
 }
 
 .content {
+  
   display: block;
 }
 
@@ -129,6 +130,8 @@ h2 {
 #pageTitle {
   font-size: 45px;
   display: block;
+  text-decoration: underline;
+  text-align: center;
 }
 
 
@@ -148,7 +151,7 @@ td {
 
 
 .footer {
-  position: absolute;
+position: absolute;
   left: 0;
   width: 100%;
   background-color: #309167;
@@ -469,3 +472,19 @@ td {
 
 
 /* ------------------- Contact ------------------- */
+
+#location {
+  width: 100vh;
+  background-color:#309167;
+  margin: auto;
+  border:10px solid #FDE992;
+  border-collapse: collapse;
+}
+#map {
+  border:5px solid #FDE992;
+  border-collapse: collapse;
+margin: 10%;
+}
+#location p{
+  text-align: center;
+}
