@@ -177,6 +177,9 @@ td {
   padding-right: 50px;
 }
 
+#settingsPopup {
+ display: none;
+}
 
 /* ------------------- Index ------------------- */
 
