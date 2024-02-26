@@ -7,26 +7,13 @@
 }
 
 body {
-  background-color: white;
 
-}
-
-body,
-html {
-  height: 100%;
-}
-
-.mainBody {
-  position: relative;
-  min-height: calc(100% - 86px);
   background-color: white;
 }
 
-.content {
-
-  display: block;
+#mainBody {
+  min-height: 85.1vh;
 }
-
 
 /* ------------------- Header ------------------- */
 
@@ -150,30 +137,17 @@ td {
 /* ------------------- Footer ------------------- */
 
 
-.footer {
-  position: absolute;
-  left: 0;
+#footer {
   width: 100%;
   background-color: #309167;
   bottom: 0;
   color: black;
-  display: block;
   text-align: center;
 }
 
-.footerLeft {
-  display: inline;
-  float: left;
-  left: 0;
-}
 
-.footerRight {
-  display: inline;
-  right: 0;
-  float: right;
-}
 
-.footerLeft img {
+#footer img {
   padding-right: 50px;
 }
 
