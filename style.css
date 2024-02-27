@@ -22,7 +22,7 @@ body {
 
 
 .sub-banner-container {
-    background-image: url(../images/prim-2.jpg) !important;
+    background-image: url(images/prim-2.jpg) !important;
     bottom: 0;
     height: 65vh;
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ td {
 }
 
 .hero-banner-container {
-    background-image: url(../images/prim-2.jpg) !important;
+    background-image: url(images/prim-2.jpg) !important;
     position: relative;
     background-color: #fff;
     background-position: 50%;
