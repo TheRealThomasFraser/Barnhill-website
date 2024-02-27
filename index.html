@@ -35,9 +35,30 @@
       <li><a href="news.html">News</a></li>
       <li><a href="homeLearning.html">Home Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <button class="open-button" onclick="openForm()">Login</button>
+  
+      
 
     </ul>
-  </nav>
+
+    
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+ 
+
+    <label for="login" style="padding: 15px;"><b>Login</b></label>
+    <input type="text" placeholder="Enter Login" name="login" required>
+
+    <label for="psw" style="padding: 15px;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
 
 
   <!-- ------------------- Index Header ------------------- -->

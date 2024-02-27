@@ -45,3 +45,12 @@ elements. forEach(function (element) {
 element.style.fontFamily = 'Helvetica';
 }) ;
 }
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

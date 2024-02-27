@@ -47,6 +47,84 @@ body {
   min-height: 35vh;
 }
 
+/* ------------------- Login ------------------- */
+
+.open-button {
+  background: linear-gradient(90deg, rgba(15,163,74,1) 28%, rgba(187,185,10,1) 100%);
+  border: 0;
+  outline: none;
+  border-bottom-left-radius: 30px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  float: inline-end;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  align-content: center;
+  right: 0px;
+  border: 3px solid #309167;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: white;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 92%;
+  padding: 15px;
+  margin: 21px 2px 30px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background: linear-gradient(90deg, rgba(15,163,74,1) 28%, rgba(187,185,10,1) 100%);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background: linear-gradient(90deg, rgba(15,163,74,1) 28%, rgba(187,185,10,1) 100%);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 /* ------------------- Navigation ------------------- */
 
@@ -180,6 +258,7 @@ td {
 
 
 #bottom-divide-of-sch-img {
+
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgMzAgMCAzMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgNjAgMCA2MHoiLz48L2c+PC9zdmc+);
   background-size: 200% 100px;
   bottom: 0;
@@ -187,7 +266,7 @@ td {
   background-repeat: no-repeat;
 }
 
-#hero-banner-container {
+.hero-banner-container {
   background-image: url("images/prim-2.jpg") !important;
   position: relative;
   background-color: #fff;
@@ -195,6 +274,9 @@ td {
   background-size: 100%;
   background-size: cover;
 }
+
+
+
 
 #hero-banner-column {
   min-height: 70vh;
