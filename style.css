@@ -18,14 +18,35 @@ body {
 /* ------------------- Header ------------------- */
 
 
-header {
-  background-image: url(images/tempTopBar.jpg);
+.sub-banner-container {
+  background-image: url(images/prim-2.jpg) !important;
   bottom: 0;
-  height: 200px;
+  height: 65vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #fff;
+  background-position: 50% 40%;
+  background-size: 100%;
+  position: relative;
 
 }
+
+.bottom-divide-of-sch-img {
+
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNGRkZGRkYiPjxwYXRoIGQ9Ik0wIDE0MGgxMjgwQzU3My4wOCAxNDAgMCAwIDAgMHoiIGZpbGwtb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgMzAgMCAzMHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMCAxNDBoMTI4MEM1NzMuMDggMTQwIDAgNjAgMCA2MHoiLz48L2c+PC9zdmc+);
+  background-size: 200% 100px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+.sub-banner-column {
+  min-height: 35vh;
+}
+
 
 /* ------------------- Navigation ------------------- */
 

@@ -14,8 +14,7 @@
 
   <!-- ------------------- Navigation ------------------- -->
   <header>
-    <h1> Barnhill Primary School </h1>
-  </header>
+
   <nav>
 
     <ul>
@@ -38,8 +37,65 @@
       <li><a href="homeLearning.html">Home Learning</a></li>
       <li><a href="contact.html">Contact</a></li>
 
+      <button class="open-button" onclick="openForm()">Login</button>
+  
+      
+
     </ul>
+
+    
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+ 
+
+    <label for="login" style="padding: 15px;"><b>Login</b></label>
+    <input type="text" placeholder="Enter Login" name="login" required>
+
+    <label for="psw" style="padding: 15px;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
   </nav>
+
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+<div class="sub-banner-container"> <!-- Opens div ID hero-banner-container -->
+
+  <div id="sub-banner-column"> <!-- Opens div ID hero-banner-column -->
+
+  </div> <!-- Closes div ID hero-banner-column -->
+
+  <div class="bottom-divide-of-sch-img"> <!-- Opens div ID bottom-divide-of-sch-img -->
+
+  </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+
+</div> <!-- Closes div ID hero-banner-container -->
+
+</Header>
 
   <!-- ------------------- Main Body ------------------- -->
 
