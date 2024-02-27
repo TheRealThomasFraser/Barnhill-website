@@ -43,6 +43,8 @@ function shrinkText() {
     });
 }
 
+
+
 function changeFont() {
     var elements =
         document.querySelectorAll('body *');
