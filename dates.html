@@ -78,8 +78,23 @@
                 </div>
             </div>
         </header>
+        <!-- ------------------- Index Header ------------------- -->
 
 
+        <div class="hero-banner-container">
+            <!-- Opens div ID hero-banner-container -->
+
+            <div id="hero-banner-column">
+                <!-- Opens div ID hero-banner-column -->
+
+            </div> <!-- Closes div ID hero-banner-column -->
+
+            <div class="bottom-divide-of-sch-img">
+                <!-- Opens div ID bottom-divide-of-sch-img -->
+
+            </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+
+        </div> <!-- Closes div ID hero-banner-container -->
         <!-- ------------------- Main Body ------------------- -->
 
 
@@ -364,7 +379,18 @@
 
         </footer>
     </div>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.hamburger-button').addEventListener('click', function () {
+                var navLinks = document.querySelector('.nav-links');
+                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                    navLinks.style.display = 'block';
+                } else {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

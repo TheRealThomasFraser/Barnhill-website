@@ -79,7 +79,23 @@
             </div>
         </header>
 
+        <!-- ------------------- Index Header ------------------- -->
 
+
+        <div class="hero-banner-container">
+            <!-- Opens div ID hero-banner-container -->
+
+            <div id="hero-banner-column">
+                <!-- Opens div ID hero-banner-column -->
+
+            </div> <!-- Closes div ID hero-banner-column -->
+
+            <div class="bottom-divide-of-sch-img">
+                <!-- Opens div ID bottom-divide-of-sch-img -->
+
+            </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+
+        </div> <!-- Closes div ID hero-banner-container -->
         <!-- ------------------- Main Body ------------------- -->
 
 
@@ -87,17 +103,17 @@
         <h1 id="pageTitle"> Frequently Asked Questions</h1>
 
         <div class="QnA">
-            <h2 class="question dropdownTitle"  onclick="hideItem('a1', 'FAQ1')"> When does the school open and close?<p id="FAQ1" style="display:inline;">&#9660;</p></h2>
+            <h2 class="question dropdownTitle" onclick="hideItem('a1', 'FAQ1')"> When does the school open and close?<p id="FAQ1" style="display:inline;">&#9660;</p></h2>
             <p class="answer" id="a1">A: The school is open from 09:00 to 15:15, Monday to Friday.</p>
         </div>
 
         <div class="QnA">
-            <h2 class="question dropdownTitle"  onclick="hideItem('a2', 'FAQ2')"> When are the pupil's break and lunch times?<p id="FAQ2" style="display:inline;">&#9660;</p></h2>
+            <h2 class="question dropdownTitle" onclick="hideItem('a2', 'FAQ2')"> When are the pupil's break and lunch times?<p id="FAQ2" style="display:inline;">&#9660;</p></h2>
             <p class="answer" id="a2">A: Break is from 11:10 to 11:30<br>Lunch is from 13:15 to 14:00</p>
         </div>
 
         <div class="QnA">
-            <h2 class="question dropdownTitle QnA"  onclick="hideItem('a3', 'FAQ3')">School Dinners<p id="FAQ3" style="display:inline;">&#9660;</p></h2>
+            <h2 class="question dropdownTitle QnA" onclick="hideItem('a3', 'FAQ3')">School Dinners<p id="FAQ3" style="display:inline;">&#9660;</p></h2>
             <p class="answer" id="a3">
                 A: School Dinners are free for P1-5 and cost £2.10 per day for P6-7. Please follow the link to
                 Parent Pay if you
@@ -169,7 +185,18 @@
 
         </footer>
     </div>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.hamburger-button').addEventListener('click', function () {
+                var navLinks = document.querySelector('.nav-links');
+                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                    navLinks.style.display = 'block';
+                } else {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
