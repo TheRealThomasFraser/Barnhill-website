@@ -1,4 +1,5 @@
 function abtDrpDwn() {
+
   var section = document.getElementById("dropdown-content");
   if (section.style.display == "none") {
   section.style.display = "block";
@@ -53,4 +54,18 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+
+function hideItem (sectionID, button) {
+  var section = document.getElementById(sectionID);
+  var right = "&#9658";
+  var down= "&#9660";
+  if (section.style.display == "none") {
+    section.style.display = "";
+    document.getElementById(button).innerHTML= down;
+  } else {
+    section.style.display = "none"
+    document.getElementById(button).innerHTML= right;
+
+  }
 }

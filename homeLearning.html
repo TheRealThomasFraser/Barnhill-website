@@ -13,9 +13,7 @@
   <div id="mainBody"> <!-- Opens div class mainBody -->
 
   <!-- ------------------- Navigation ------------------- -->
-  <header>
-    <h1> Barnhill Primary School </h1>
-  </header>
+
   <nav>
 
     <ul>
@@ -87,7 +85,7 @@
     <p> Click on the links in the table for some home learning activities. Most of these activities are PC/laptop
       friendly and have tablet friendly versions as well. If you have any problems with any of the links please let us
       know.</p>
-    <h2 onclick="hideTable('genTable')"> General </h2>
+    <h2 class="dropdownTitle" onclick="hideItem('genTable', 'HLG')"> General <p id="HLG" style="display:inline;">&#9660;</p> </h2>
     <table id="genTable">
       <tr>
         <th> Link </th>
@@ -171,7 +169,7 @@
     </table>
 
 
-    <h2 onclick="hideTable('mathTable')"> Maths </h2>
+    <h2 class="dropdownTitle" onclick="hideItem('mathTable', 'HLM')"> Maths <p id="HLM" style="display:inline;">&#9660;</p></h2>
     <table id="mathTable">
       <tr>
         <th> Link </th>
@@ -270,7 +268,7 @@
 
     </table>
 
-    <h2 onclick="hideTable('engTable')"> English </h2>
+    <h2 class="dropdownTitle" onclick="hideItem('engTable', 'HLE')"> English <p id="HLE" style="display:inline;">&#9660;</p></h2>
     <table id="engTable">
       <tr>
         <th> Link </th>
@@ -332,11 +330,10 @@
               src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
               style="width: 60px; height:60px;"></a>
         
-          <button>Settings</button>
-          <p>Contact Us
-            <br></p>
+          <p id="cu">Contact Us
+            <br><span id="button">Settings<span></p>
   
-          <p>&#169; Barnhill Primary School 2023</p>
+          <p id="cr">&#169; Barnhill Primary School 2023</p>
   
   
       </footer>

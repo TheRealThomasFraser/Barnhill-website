@@ -13,9 +13,6 @@
   <div id="mainBody"> <!-- Opens div class mainBody -->
 
   <!-- ------------------- Navigation ------------------- -->
-  <header>
-    <h1> Barnhill Primary School </h1>
-  </header>
   <nav>
 
     <ul>
@@ -39,12 +36,9 @@
       <li><a href="contact.html">Contact</a></li>
       <button class="open-button" onclick="openForm()">Login</button>
   
-      
-
     </ul>
 
     
-
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
  
@@ -60,8 +54,7 @@
   </form>
 </div>
 
-
-  </nav>
+</nav>
 
 
 <div class="sub-banner-container"> <!-- Opens div ID hero-banner-container -->
@@ -76,21 +69,26 @@
 
 </div> <!-- Closes div ID hero-banner-container -->
 
-</Header>
+</header>
 
 
   <!-- ------------------- Main Body ------------------- -->
 
 
-
     <h1 id="pageTitle"> News</h1>
-    <h2>This week's news!</h2>
+  <div class="background-wrapper">
+  <div class="sway-wrapper">
 
+
+  
     <script src="script.js"></script>
 
     <iframe src="https://sway.cloud.microsoft/s/nARFYvD7QQTki0DN/embed" title="Sway Newsletter"
-      style="height:200px; width:500px; border:2px solid red; display: block;"></iframe>
+      style="height:40vh; width:100vh;  display: block; margin-bottom: 5%;"></iframe>
+  </div>
+</div>
 
+    <div class="J-leader-msg" style="padding: 20px;">
     <h1> Junior Leadership</h1>
     <p> Pupil Voice is extremely important in our school and we believe that the Junior Leadership Team allows our
       pupils to have an
@@ -100,6 +98,7 @@
       reps about any issues
       of concern. This year, our JLT produced the first digital edition of BRILL News which
       can be found above. </p>
+    </div>
 
   </div> <!-- Closes div class mainBody -->
 
@@ -125,11 +124,11 @@
             src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
             style="width: 60px; height:60px;"></a>
       
-        <button>Settings</button>
-        <p>Contact Us
-          <br></p>
+        
+        <p id="cu">Contact Us
+          <br><span id="button">Settings</span></p>
 
-        <p>&#169; Barnhill Primary School 2023</p>
+        <p id = "cr">&#169; Barnhill Primary School 2023</p>
 
 
     </footer>

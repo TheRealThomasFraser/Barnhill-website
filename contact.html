@@ -13,9 +13,8 @@
   <div id="mainBody"> <!-- Opens div class mainBody -->
 
   <!-- ------------------- Navigation ------------------- -->
-  <header>
-    <h1> Barnhill Primary School </h1>
-  </header>
+
+
   <nav>
 
     <ul>
@@ -80,17 +79,48 @@
 
   <!-- ------------------- Main Body ------------------- -->
 
+      <h1 id="pageTitle">Contact</h1>
+      <div class="wrapRndCon">
+      <div class="wrapper-contact">
+        <div id="tel">
+        <h2 > Tel: </h2>
+        <ul>
+          <li> School: 01382 436993 </li>
+        </ul>
+        </div>
+      
+        <div id="email">
+        <h2>Email</h2>
+        <ul>
+        
+      
+          <li>Principle: abruce174@dundeeschools.scot</li>
+          
 
+          <li>Deputy Head: psmith966@dundeeschools.scot</li>
+          <li>School: barnhillprimary@dundeeschools.scot  </li>
+        </ul>
+        </div>
+      </div>
+      
+    
+    
 
-    <h1 id="pageTitle">Contact</h1>
-    <div id="location">
-      <h2 style="display:block;text-align: center;"> Location </h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.3672835063953!2d-2.8576694596827665!3d56.478660535962945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865ef4b049440f%3A0xbf911ad0ca76e7f8!2sBarnhill%20Primary%20School!5e0!3m2!1sen!2suk!4v1708007344974!5m2!1sen!2suk"
-        id="map" width="400" height="400" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p style="display: inline-block;">Falkland Crescent <br> Dundee <br> DD5 3SQ </p>
-    </div>
+       
+        
+      
+
+         
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.3672835063953!2d-2.8576694596827665!3d56.478660535962945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865ef4b049440f%3A0xbf911ad0ca76e7f8!2sBarnhill%20Primary%20School!5e0!3m2!1sen!2suk!4v1708007344974!5m2!1sen!2suk"
+          id="map" width="400" height="400" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        </div>
+
+      
+   
+
 
     <div id="settingsPopup">
       <h1 onclick="enlargeText()"> Big </h1>
@@ -98,22 +128,12 @@
       <h1 onclick="changeFont()"> Font </h1>
     </div>
 
-    <h2> Tel: </h2>
-    <ul>
-      <li> School: 01382 436993 </li>
-    </ul>
 
-    <h2> Email: </h2>
-    <ul>
-      <li> School: barnhillprimary@dundeeschools.scot</li>
-      <li> Mrs Bruce: abruce174@dundeeschools.scot </li>
-      <li> Mr Smith: psmith966@dundeeschools.scot </li>
-    </ul>
 
 
   </div>
     <!-- ------------------- Footer ------------------- -->
-
+ 
     <div id="footer">
       <footer>
           <h3> Useful Links</h3>
@@ -134,11 +154,11 @@
               src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
               style="width: 60px; height:60px;"></a>
         
-          <button onclick="showSettings()">Settings</button>
-          <p>Contact Us
-            <br></p>
+         
+          <p id="cu">Contact Us
+            <br> <span id="button" onclick="showSettings()">Settings</span></p>
   
-          <p>&#169; Barnhill Primary School 2023</p>
+          <p id="cr">&#169; Barnhill Primary School 2023</p>
   
   
       </footer>

@@ -13,7 +13,7 @@
    <div id="mainBody"> <!-- Opens div class mainBody -->
   
     <!-- ------------------- Navigation ------------------- -->
-  <header> <h1> Barnhill Primary School </h1> </header>
+
     <nav>
   
       <ul>
@@ -86,8 +86,8 @@
               <header class="calendar-header">
                   <p class="calendar-current-date"></p>
                   <div class="calendar-navigation">
-                      <span id="calendar-prev" class="material-symbols-rounded"> Prev </span>
-                      <span id="calendar-next" class="material-symbols-rounded"> Next </span>
+                      <span id="calendar-prev" class="material-symbols-rounded"> &#x21E6;</span>
+                      <span id="calendar-next" class="material-symbols-rounded"> &#x21E8; </span>
                   </div>
               </header>
               <div class="calendar-body">
@@ -103,6 +103,36 @@
                   <ul class="calendar-dates"></ul>
               </div>
           </div>
+
+    <div id="keyDts">
+          <div id="dateLink">
+           <h2> Term Dates</a><br></h2>
+       <p> <Br>View the Term Dates <a href="https://www.dundeecity.gov.uk/service-area/children-and-families-service/education/school-term-dates">here</a> for dundee city council.</p>
+       <Br>
+      <h2> Spring Term</h2>
+    
+    <p>
+        <Br>
+    Monday 8 January 2024 - All resume<br>
+    Friday 16 February 2024 - Mid term, All break<br>
+    Monday 19 February 2024 - Mid term, All break<br>
+    Tuesday 20 February 2024 - In service day, schools closed<br>
+    Thursday 28 March 2024 - Term ends<br>
+    Spring Holiday<br><br>
+
+    Friday 29 March 2024 - Holiday starts<br>
+    Friday 12 April 2024 - Holiday ends<br>
+    Summer Term<br><br>
+
+    Monday 15 April 2024 - All resume<br>
+    Thursday 2 May 2024 - In service day, schools closed<br>
+    Monday 6 May 2024 - May Day, schools closed<br>
+    Monday 27 May 2024 - Victoria Day, schools closed<br>
+    Friday 28 June 2024 - Term ends<br><br>
+        </p>
+          </div>
+    </div>
+
           <style>
             
               
@@ -111,13 +141,18 @@
                   width: 450px;
                   border-radius: 10px;
                   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+                  margin-left:  35%;
+                  margin-top:5%;
+                  margin-bottom:5%;
               }
               
               .calendar-container header {
                   display: flex;
-                  align-items: center;
                   padding: 25px 30px 10px;
                   justify-content: space-between;
+                  height:200px;
+                  background-position:75% 25%;
+                  background-image:url(https://i2-prod.dailyrecord.co.uk/incoming/article27317686.ece/ALTERNATES/s810/0_barnhillprimary2.png);
               }
               
               header .calendar-navigation {
@@ -128,6 +163,7 @@
                   line-height: 38px;
                   border-radius: 50%;
                   color: white;
+                  font-size: 3em;
               }
               
               .calendar-navigation span:last-child {
@@ -135,12 +171,13 @@
               }
               
               header .calendar-navigation span:hover {
-                  background: #f2f2f2;
+                  background: #000000;
               }
               
               header .calendar-current-date {
                   font-weight: 500;
-                  font-size: 1.45rem;
+                  font-size: 1.3rem;
+                  color:white;
               }
               
               .calendar-body {
@@ -309,11 +346,11 @@
                 src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
                 style="width: 60px; height:60px;"></a>
           
-            <button>Settings</button>
-            <p>Contact Us
-              <br></p>
+            
+            <p id="cu">Contact Us
+              <br><span id="button">Settings<span></p>
     
-            <p>&#169; Barnhill Primary School 2023</p>
+            <p id="cr">&#169; Barnhill Primary School 2023</p>
     
     
         </footer>
