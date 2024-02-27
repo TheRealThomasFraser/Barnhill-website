@@ -2,324 +2,353 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Home</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="images/x-icon" href="images/bpslogo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="images/x-icon" href="images/bpslogo.png">
 </head>
 
 <body>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
-  <!-- ------------------- Navigation ------------------- -->
 
-</div>
+    <!-- ------------------- Navigation ------------------- -->
+    <header>
+        <nav>
 
-  <nav>
+            <ul>
 
-    <ul>
+                <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="../images/bpslogo.png"></a>
 
-      <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
+                <li><a href="index.html">Home</a></li>
 
-      <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
+                    <div id="dropdown-content">
+                        <!-- Opens div class dropdown-content-->
+                        <a href="faq.html">FAQ</a>
+                        <a href="dates.html">Dates</a>
+                        <a href="staff.html">Staff</a>
+                        <a href="uniform.html">Uniform</a>
+                    </div> <!-- Closes div class dropdown-content -->
+                </li>
 
-      <li class="dropdown">
-        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
-        <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
-          <a href="faq.html">FAQ</a>
-          <a href="dates.html">Dates</a>
-          <a href="staff.html">Staff</a>
-          <a href="uniform.html">Uniform</a>
-        </div> <!-- Closes div class dropdown-content -->
-      </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="homeLearning.html">Home Learning</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button class="open-button" onclick="openForm()">Login</button>
 
-      <li><a href="news.html">News</a></li>
-      <li><a href="homeLearning.html">Home Learning</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <button class="open-button" onclick="openForm()">Login</button>
-  
-      
 
-    </ul>
 
-    
+            </ul>
 
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
- 
+            <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
 
-    <label for="login" style="padding: 15px;"><b>Login</b></label>
-    <input type="text" placeholder="Enter Login" name="login" required>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
 
-    <label for="psw" style="padding: 15px;"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+                    <label for="login" style="padding: 15px;"><b>Login</b></label>
+                    <input type="text" placeholder="Enter Login" name="login" required>
 
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+                    <label for="psw" style="padding: 15px;"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
 
-  </nav>
 
+        </nav>
+        <div id="hamburger-menu">
+            <button class="hamburger-button"> ☰ </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="dates.html">Dates</a>
+                <a href="staff.html">Staff</a>
+                <a href="uniform.html">Uniform</a>
+                <a href="news.html">News</a>
+                <a href="homeLearning.html">Home Learning</a>
+                <a href="contact.html">Contact</a>
 
-  <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-    
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
 
-
-  <!-- ------------------- Index Header ------------------- -->
-
-
-  <div class="hero-banner-container"> <!-- Opens div ID hero-banner-container -->
-
-    <div id="hero-banner-column"> <!-- Opens div ID hero-banner-column -->
-
-    </div> <!-- Closes div ID hero-banner-column -->
-
-    <div class="bottom-divide-of-sch-img"> <!-- Opens div ID bottom-divide-of-sch-img -->
-
-    </div> <!-- Closes div ID bottom-divide-of-sch-img -->
-
-  </div> <!-- Closes div ID hero-banner-container -->
-
-
-  <!-- ------------------- Welcome ------------------- -->
-
-
-  <div class="mainBody"> <!-- Opens div class mainBody -->
-
-  
-
-      <div class="welcomeMsg"> <!-- Opens div class welcomeMsg -->
-
-        <h2>Welcome to Barnhill Primary school</h2>
-
-        <p>We are situated in the suburb of Broughty Ferry, Dundee. We have a roll of over 400
-          pupils in P1-7 with another 60 children who attend the nursery. </p>
-
-      </div> <!-- Closes div class welcomeMsg -->
-
-
-      <!-- ------------------- Carousel------------------- -->
-
-
-      <div class="slideshow-container"> <!-- Opens div class slideshow-container -->
-
-        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">1 / 3</div> <!--  Opens and Closes div class numbertext -->
-          <img src="images/tempTopBar.jpg" style="width:100%">
-          <div class="text">Castle Green, Broughty Ferry, Barnhill</div> <!--  Opens and Closes div class text -->
-        </div> <!--  Closes div class mySlides fade -->
-
-        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">2 / 3</div> <!--  Opens and Closes div class numbertext -->
-          <img src="images/bpslogo.png" style="width:100%">
-          <div class="images/text">Barnhill Primary School</div> <!--  Opens and Closes div class text -->
-        </div> <!--  Closes div class mySlides fade -->
-
-        <div class="mySlides fade"> <!-- Opens div class mySlides fade -->
-          <div class="numbertext">3 / 3</div> <!--  Opens and Closes div class numbertext -->
-          <img src="images/headertest.jpeg" style="width:100%">
-          <div class="text">Barnhill Primary Class Photo</div> <!--  Opens and Closes div class text -->
-        </div> <!--  Closes div class mySlides fade -->
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-      </div> <!-- Closes div class slideshow-container -->
-
-      <br>
-
-      <div class="dots"> <!-- Opens div class dots -->
-
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-
-      </div> <!-- Closes div class dots -->
-
-      
-
-      <!-- ------------------- Aims ------------------- -->
-
-      <div class="aims"> <!-- Opens div class aims -->
-        <div class="wave-container">
-          <div id="wrapper-for-text">
-        <ul>
-          <li>
-            <h1>Our Aims Are:</h1>
-          </li>
-
-          <li> To create a welcoming, safe and happy school where everyone is valued. </li>
-
-          <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
-
-          <li> To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to
-            meet the needs of each individual pupil. </li>
-
-          <li> To ensure that the whole school community feel included and are proud of their work and achievements
-            both in and out of school. </li>
-
-          <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
-
-          <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
-
-        </ul>
-     
-
-
-      </div>
-   
-      </div>
-      </div> <!-- Closes div class aims -->
-
-      <!-- ------------------- Brill ------------------- -->
-
-      <div id="brill"> <!-- Opens div id brill -->
-
-        <div id="BDiv" style="background-color: red; width: 100px;transition: width 2s;
-        transition-timing-function: cubic-bezier(0.1,);"> <!-- Opens div id BDiv -->
-          <img src="images/B.png" class="letter" id="B" onclick="wordShow('believe', 'BDiv')">
-         
-          <p id="believe" style="display: none; font-size: 50px;"> elieve </p> <!-- Closes div id BDiv -->
-          
+            </div>
         </div>
-
-        <div id="RDiv" style="background-color: orange; width: 100px;transition: width 2s;
-        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);"> <!-- Opens div id RDiv -->
-          <img src="images/thumbnail_R.png" class="letter" id="R" onclick="wordShow('respect', 'RDiv')">
-          <p id="respect" style="display: none; font-size: 50px;"> espect </p> <!-- Closes div id RDiv -->
-        </div>
-
-        <div id="IDiv" style="background-color: yellow; width: 100px;transition: width 2s;
-        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);"> <!-- Opens div id IDiv -->
-          <img src="images/I.png" class="letter" id="I" onclick="wordShow('include', 'IDiv')">
-          <p id="include" style="display: none; font-size: 50px;"> nclude </p> <!-- Closes div id IDiv -->
-        </div>
-
-        <div id="LDiv" style="background-color: rgb(43, 191, 43); width: 100px;transition: width 2s;
-        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);"> <!-- Opens div id LDiv -->
-          <img src="images/L.png" class="letter" id="L" onclick="wordShow('learn', 'LDiv')">
-          <p id="learn" style="display: none; font-size: 50px;"> earn and achieve</p> <!-- Closes div id LDiv -->
-        </div>
-
-        <div id="L2Div" style="background-color: rgb(34, 130, 255); width: 100px;transition: width 2s;
-        transition-timing-function: cubic-bezier(0.10.1,0.2,0.1);"> <!-- Opens div id L2Div -->
-          <img src="images/L.png" class="letter" id="L2" onclick="wordShow('look', 'L2Div')">
-          <p id="look" style="display: none; font-size: 50px;"> ook after each other</p> <!-- Closes div id L2Div -->
-        </div>
+    </header>
 
 
-      </div> <!-- Closes div id brill -->
 
-      <!-- ------------------- Head Teacher Message ------------------- -->
+    <!-- ------------------- Index Header ------------------- -->
 
-      <div id="HTmsg">
-        <div id="HTmain">
-          <img src="images/woman.png" alt="Picture of head teacher" id="HTimg">
-          <div id="HTtext">
-            <p> HEADTEACHER MESSAGE GOES HERE</p>
-          </div> <!-- Closes div id HTmsg -->
-        </div> <!-- Closes div id HTmain -->
-      </div> <!-- Closes div id HTtext -->
 
-    </div> 
+    <div class="hero-banner-container">
+        <!-- Opens div ID hero-banner-container -->
+
+        <div id="hero-banner-column">
+            <!-- Opens div ID hero-banner-column -->
+
+        </div> <!-- Closes div ID hero-banner-column -->
+
+        <div class="bottom-divide-of-sch-img">
+            <!-- Opens div ID bottom-divide-of-sch-img -->
+
+        </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+
+    </div> <!-- Closes div ID hero-banner-container -->
+    <!-- ------------------- Welcome ------------------- -->
+
+
+    <div class="mainBody">
+        <!-- Opens div class mainBody -->
+
+
+
+        <div class="welcomeMsg">
+            <!-- Opens div class welcomeMsg -->
+
+            <h2>Welcome to Barnhill Primary school</h2>
+
+            <p>
+                We are situated in the suburb of Broughty Ferry, Dundee. We have a roll of over 400
+                pupils in P1-7 with another 60 children who attend the nursery.
+            </p>
+
+        </div> <!-- Closes div class welcomeMsg -->
+        <!-- ------------------- Carousel------------------- -->
+
+
+        <div class="slideshow-container">
+            <!-- Opens div class slideshow-container -->
+
+            <div class="mySlides fade">
+                <!-- Opens div class mySlides fade -->
+                <div class="numbertext">1 / 3</div> <!--  Opens and Closes div class numbertext -->
+                <img src="../images/tempTopBar.jpg" style="width:100%">
+                <div class="text">Castle Green, Broughty Ferry, Barnhill</div> <!--  Opens and Closes div class text -->
+            </div> <!--  Closes div class mySlides fade -->
+
+            <div class="mySlides fade">
+                <!-- Opens div class mySlides fade -->
+                <div class="numbertext">2 / 3</div> <!--  Opens and Closes div class numbertext -->
+                <img src="../images/bpslogo.png" style="width:100%">
+                <div class="images/text">Barnhill Primary School</div> <!--  Opens and Closes div class text -->
+            </div> <!--  Closes div class mySlides fade -->
+
+            <div class="mySlides fade">
+                <!-- Opens div class mySlides fade -->
+                <div class="numbertext">3 / 3</div> <!--  Opens and Closes div class numbertext -->
+                <img src="../images/headertest.jpeg" style="width:100%">
+                <div class="text">Barnhill Primary Class Photo</div> <!--  Opens and Closes div class text -->
+            </div> <!--  Closes div class mySlides fade -->
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div> <!-- Closes div class slideshow-container -->
+
+        <br>
+
+        <div class="dots">
+            <!-- Opens div class dots -->
+
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+        </div> <!-- Closes div class dots -->
+        <!-- ------------------- Aims ------------------- -->
+
+        <div class="aims">
+            <!-- Opens div class aims -->
+            <div class="wave-container">
+                <div id="wrapper-for-text">
+                    <ul>
+                        <li>
+                            <h1>Our Aims Are:</h1>
+                        </li>
+
+                        <li> To create a welcoming, safe and happy school where everyone is valued. </li>
+
+                        <li> To promote a sense of responsibility, respect and caring attitude in all pupils and staff. </li>
+
+                        <li>
+                            To provide a broad, stimulating education by learning through discovery, challenge and enjoyment to
+                            meet the needs of each individual pupil.
+                        </li>
+
+                        <li>
+                            To ensure that the whole school community feel included and are proud of their work and achievements
+                            both in and out of school.
+                        </li>
+
+                        <li> To instill confidence in pupils and staff to develop skills for learning, life and work. </li>
+
+                        <li> To encourage all to reflect and self-evaluate as they strive to achieve their goals. </li>
+
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </div> <!-- Closes div class aims -->
+        <!-- ------------------- Brill ------------------- -->
+
+        <div id="brill">
+            <!-- Opens div id brill -->
+
+            <div id="BDiv" style="background-color: red; width: 100px;transition: width 2s;
+        transition-timing-function: cubic-bezier(0.1,);">
+                <!-- Opens div id BDiv -->
+                <img src="../images/B.png" class="letter" id="B" onclick="wordShow('believe', 'BDiv')">
+
+                <p id="believe" style="display: none; font-size: 50px;"> elieve </p> <!-- Closes div id BDiv -->
+
+            </div>
+
+            <div id="RDiv" style="background-color: orange; width: 100px;transition: width 2s;
+        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);">
+                <!-- Opens div id RDiv -->
+                <img src="../images/R.png" class="letter" id="R" onclick="wordShow('respect', 'RDiv')">
+                <p id="respect" style="display: none; font-size: 50px;"> espect </p> <!-- Closes div id RDiv -->
+            </div>
+
+            <div id="IDiv" style="background-color: yellow; width: 100px;transition: width 2s;
+        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);">
+                <!-- Opens div id IDiv -->
+                <img src="../images/I.png" class="letter" id="I" onclick="wordShow('include', 'IDiv')">
+                <p id="include" style="display: none; font-size: 50px;"> nclude </p> <!-- Closes div id IDiv -->
+            </div>
+
+            <div id="LDiv" style="background-color: rgb(43, 191, 43); width: 100px;transition: width 2s;
+        transition-timing-function: cubic-bezier(0.1,0.1,0.2,0.1);">
+                <!-- Opens div id LDiv -->
+                <img src="../images/L.png" class="letter" id="L" onclick="wordShow('learn', 'LDiv')">
+                <p id="learn" style="display: none; font-size: 50px;"> earn and achieve</p> <!-- Closes div id LDiv -->
+            </div>
+
+            <div id="L2Div" style="background-color: rgb(34, 130, 255); width: 100px;transition: width 2s;
+        transition-timing-function: cubic-bezier(0.10.1,0.2,0.1);">
+                <!-- Opens div id L2Div -->
+                <img src="../images/L.png" class="letter" id="L2" onclick="wordShow('look', 'L2Div')">
+                <p id="look" style="display: none; font-size: 50px;"> ook after each other</p> <!-- Closes div id L2Div -->
+            </div>
+
+
+        </div> <!-- Closes div id brill -->
+        <!-- ------------------- Head Teacher Message ------------------- -->
+
+        <div id="HTmsg">
+            <div id="HTmain">
+                <img src="../images/woman.png" alt="Picture of head teacher" id="HTimg">
+                <div id="HTtext">
+                    <p> HEADTEACHER MESSAGE GOES HERE</p>
+                </div> <!-- Closes div id HTmsg -->
+            </div> <!-- Closes div id HTmain -->
+        </div> <!-- Closes div id HTtext -->
+
+    </div>
 
     <!-- ------------------- Footer ------------------- -->
 
 
     <div id="footer">
-      <footer>
-          <h3> Useful Links</h3>
-          
-          <a href="https://twitter.com/BarnhillPrimary"><img
-              src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
-              style="width: 60px; height:60px;"></a>
-          <a href="https://secure.glowscotland.org.uk/login/login.htm"><img
-              src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
-              style="width: 60px; height:60px;"></a>
-          <a href="https://www.dundeecity.gov.uk/"><img
-              src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
-              style="width: 60px; height:60px;"></a>
-          <a href="http://www.educationscotland.gov.uk/"><img
-              src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
-              style="width: 60px; height:60px;"></a>
-          <a href="https://app.parentpay.com/public/client/security/v2/#/login"><img
-              src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
-              style="width: 60px; height:60px;"></a>
-        
-          <p id="cu">Contact Us
-            <br>   <span id="button">Settings</span></p>
-  
-          <p id="cr">&#169; Barnhill Primary School 2023</p>
-  
-  
-      </footer>
+        <footer>
+            <h3> Useful Links</h3>
+
+            <a href="https://twitter.com/BarnhillPrimary">
+                <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://secure.glowscotland.org.uk/login/login.htm">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://www.dundeecity.gov.uk/">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="http://www.educationscotland.gov.uk/">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://app.parentpay.com/public/client/security/v2/#/login">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
+                     style="width: 60px; height:60px;">
+            </a>
+
+            <p id="cu">
+                Contact Us
+                <br>   <span id="button">Settings</span>
+            </p>
+
+            <p id="cr">&#169; Barnhill Primary School 2023</p>
+
+
+        </footer>
     </div>
 
 
-  <!-- ------------------- Javascript ------------------- -->
+    <!-- ------------------- Javascript ------------------- -->
 
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
 
-    function wordShow(word, letterDiv) {
-      var word = document.getElementById(word);
-      var div = document.getElementById(letterDiv);
-      if (word.style.display == "none") {
+        function wordShow(word, letterDiv) {
+            var word = document.getElementById(word);
+            var div = document.getElementById(letterDiv);
+            if (word.style.display == "none") {
 
-        word.style.display = "inline";
-        div.style.width = "100%";
+                word.style.display = "inline";
+                div.style.width = "100%";
 
-      } else {
-        word.style.display = "none"
-        div.style.width = "100px";
-      }
-    }
+            } else {
+                word.style.display = "none"
+                div.style.width = "100px";
+            }
+        }
 
-  </script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.hamburger-button').addEventListener('click', function () {
+                var navLinks = document.querySelector('.nav-links');
+                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                    navLinks.style.display = 'block';
+                } else {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+
+    </script>
 </body>
 
 

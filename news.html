@@ -2,137 +2,152 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>News</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>News</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <script src="script.js"></script>
-  <div id="mainBody"> <!-- Opens div class mainBody -->
-
-  <!-- ------------------- Navigation ------------------- -->
-  <nav>
-
-    <ul>
-
-      <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
-
-      <li><a href="index.html">Home</a></li>
-
-      <li class="dropdown">
-        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
-        <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
-          <a href="faq.html">FAQ</a>
-          <a href="dates.html">Dates</a>
-          <a href="staff.html">Staff</a>
-          <a href="uniform.html">Uniform</a>
-        </div> <!-- Closes div class dropdown-content -->
-      </li>
-
-      <li><a href="news.html">News</a></li>
-      <li><a href="homeLearning.html">Home Learning</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <button class="open-button" onclick="openForm()">Login</button>
-  
-    </ul>
-
-    
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
- 
-
-    <label for="login" style="padding: 15px;"><b>Login</b></label>
-    <input type="text" placeholder="Enter Login" name="login" required>
-
-    <label for="psw" style="padding: 15px;"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-</nav>
-
-
-<div class="sub-banner-container"> <!-- Opens div ID hero-banner-container -->
-
-  <div id="sub-banner-column"> <!-- Opens div ID hero-banner-column -->
-
-  </div> <!-- Closes div ID hero-banner-column -->
-
-  <div class="bottom-divide-of-sch-img"> <!-- Opens div ID bottom-divide-of-sch-img -->
-
-  </div> <!-- Closes div ID bottom-divide-of-sch-img -->
-
-</div> <!-- Closes div ID hero-banner-container -->
-
-</header>
-
-
-  <!-- ------------------- Main Body ------------------- -->
-
-
-    <h1 id="pageTitle"> News</h1>
-  <div class="background-wrapper">
-  <div class="sway-wrapper">
-
-
-  
     <script src="script.js"></script>
+    <div id="mainBody">
 
-    <iframe src="https://sway.cloud.microsoft/s/nARFYvD7QQTki0DN/embed" title="Sway Newsletter"
-      style="height:40vh; width:100vh;  display: block; margin-bottom: 5%;"></iframe>
-  </div>
-</div>
+        <!-- ------------------- Navigation ------------------- -->
+        <header>
+            <nav>
 
-    <div class="J-leader-msg" style="padding: 20px;">
-    <h1> Junior Leadership</h1>
-    <p> Pupil Voice is extremely important in our school and we believe that the Junior Leadership Team allows our
-      pupils to have an
-      active role in the decision making process within the school as well as the learning and teaching process. Every
-      class has their
-      own representative voted by their peers and children within the school are encouraged to talk to their class
-      reps about any issues
-      of concern. This year, our JLT produced the first digital edition of BRILL News which
-      can be found above. </p>
+                <ul>
+
+                    <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="../images/bpslogo.png"></a>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
+                        <div id="dropdown-content">
+                            <!-- Opens div class dropdown-content-->
+                            <a href="faq.html">FAQ</a>
+                            <a href="dates.html">Dates</a>
+                            <a href="staff.html">Staff</a>
+                            <a href="uniform.html">Uniform</a>
+                        </div> <!-- Closes div class dropdown-content -->
+                    </li>
+
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="homeLearning.html">Home Learning</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="open-button" onclick="openForm()">Login</button>
+
+
+
+                </ul>
+
+                <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+
+
+                        <label for="login" style="padding: 15px;"><b>Login</b></label>
+                        <input type="text" placeholder="Enter Login" name="login" required>
+
+                        <label for="psw" style="padding: 15px;"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+
+            </nav>
+            <div id="hamburger-menu">
+                <button class="hamburger-button"> ☰ </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="dates.html">Dates</a>
+                    <a href="staff.html">Staff</a>
+                    <a href="uniform.html">Uniform</a>
+                    <a href="news.html">News</a>
+                    <a href="homeLearning.html">Home Learning</a>
+                    <a href="contact.html">Contact</a>
+
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ------------------- Main Body ------------------- -->
+
+
+        <h1 id="pageTitle"> News</h1>
+        <div class="background-wrapper">
+            <div class="sway-wrapper">
+
+
+
+                <script src="script.js"></script>
+                <p align="center">
+                    <iframe width="760px" height="500px" src="https://sway.cloud.microsoft/s/nARFYvD7QQTki0DN/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="display: block; border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+                </p>
+            </div>
+        </div>
+
+        <div class="J-leader-msg" style="padding: 20px;">
+            <h1> Junior Leadership</h1>
+            <p>
+                Pupil Voice is extremely important in our school and we believe that the Junior Leadership Team allows our
+                pupils to have an
+                active role in the decision making process within the school as well as the learning and teaching process. Every
+                class has their
+                own representative voted by their peers and children within the school are encouraged to talk to their class
+                reps about any issues
+                of concern. This year, our JLT produced the first digital edition of BRILL News which
+                can be found above.
+            </p>
+        </div>
+
+    </div> <!-- Closes div class mainBody -->
+    <!-- ------------------- Footer ------------------- -->
+
+    <div id="footer">
+        <footer>
+            <h3> Useful Links</h3>
+
+            <a href="https://twitter.com/BarnhillPrimary">
+                <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://secure.glowscotland.org.uk/login/login.htm">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://www.dundeecity.gov.uk/">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="http://www.educationscotland.gov.uk/">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://app.parentpay.com/public/client/security/v2/#/login">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
+                     style="width: 60px; height:60px;">
+            </a>
+
+
+            <p id="cu">
+                Contact Us
+                <br><span id="button">Settings</span>
+            </p>
+
+            <p id="cr">&#169; Barnhill Primary School 2023</p>
+
+
+        </footer>
     </div>
-
-  </div> <!-- Closes div class mainBody -->
-
-  <!-- ------------------- Footer ------------------- -->
-
-  <div id="footer">
-    <footer>
-        <h3> Useful Links</h3>
-        
-        <a href="https://twitter.com/BarnhillPrimary"><img
-            src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://secure.glowscotland.org.uk/login/login.htm"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://www.dundeecity.gov.uk/"><img
-            src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
-            style="width: 60px; height:60px;"></a>
-        <a href="http://www.educationscotland.gov.uk/"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://app.parentpay.com/public/client/security/v2/#/login"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
-            style="width: 60px; height:60px;"></a>
-      
-        
-        <p id="cu">Contact Us
-          <br><span id="button">Settings</span></p>
-
-        <p id = "cr">&#169; Barnhill Primary School 2023</p>
-
-
-    </footer>
-  </div>
 
 
 </body>

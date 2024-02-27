@@ -1,71 +1,75 @@
-function abtDrpDwn() {
 
-  var section = document.getElementById("dropdown-content");
-  if (section.style.display == "none") {
-  section.style.display = "block";
-  } else {
-    section.style.display = "none"
-  }
+
+
+
+
+function abtDrpDwn() {
+    var section = document.getElementById("dropdown-content");
+    if (section.style.display === "" || section.style.display === "none") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
 }
 
 function showSettings() {
-  var section = document.getElementById("settingsPopup");
-  if (section.style.display == "none") {
-  section.style.display = "block";
-  } else {
-    section.style.display = "none"
-  }
+    var section = document.getElementById("settingsPopup");
+    if (section.style.display == "none") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none"
+    }
 }
 
 function enlargeText() {
-  var elements =
-document. querySelectorAll('body *');
-elements. forEach(function (element) {
-var currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
-var newSize =
-(parseFloat (currentSize) * 1.25) + 'px';
-element.style.fontSize = newSize;
-}) ;
+    var elements =
+        document.querySelectorAll('body *');
+    elements.forEach(function (element) {
+        var currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var newSize =
+            (parseFloat(currentSize) * 1.25) + 'px';
+        element.style.fontSize = newSize;
+    });
 }
 
 function shrinkText() {
-  var elements =
-document. querySelectorAll('body *');
-elements. forEach(function (element) {
-var currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
-var newSize =
-(parseFloat (currentSize) * 0.75) + 'px';
-element.style.fontSize = newSize;
-}) ;
+    var elements =
+        document.querySelectorAll('body *');
+    elements.forEach(function (element) {
+        var currentSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var newSize =
+            (parseFloat(currentSize) * 0.75) + 'px';
+        element.style.fontSize = newSize;
+    });
 }
 
 function changeFont() {
-  var elements =
-document. querySelectorAll('body *');
-elements. forEach(function (element) {
-element.style.fontFamily = 'Helvetica';
-}) ;
+    var elements =
+        document.querySelectorAll('body *');
+    elements.forEach(function (element) {
+        element.style.fontFamily = 'Helvetica';
+    });
 }
 
 
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
+    document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+    document.getElementById("myForm").style.display = "none";
 }
 
-function hideItem (sectionID, button) {
-  var section = document.getElementById(sectionID);
-  var right = "&#9658";
-  var down= "&#9660";
-  if (section.style.display == "none") {
-    section.style.display = "";
-    document.getElementById(button).innerHTML= down;
-  } else {
-    section.style.display = "none"
-    document.getElementById(button).innerHTML= right;
+function hideItem(sectionID, button) {
+    var section = document.getElementById(sectionID);
+    var right = "&#9658";
+    var down = "&#9660";
+    if (section.style.display == "none") {
+        section.style.display = "";
+        document.getElementById(button).innerHTML = down;
+    } else {
+        section.style.display = "none"
+        document.getElementById(button).innerHTML = right;
 
-  }
+    }
 }

@@ -2,205 +2,215 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Staff</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Staff</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <script src="script.js"></script>
-<div id="mainBody">
-    <!-- ------------------- Navigation ------------------- -->
-    <nav>
+    <script src="script.js"></script>
+    <div id="mainBody">
+        <!-- ------------------- Navigation ------------------- -->
+        <header>
+            <nav>
 
-      <ul>
+                <ul>
 
-        <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="images/bpslogo.png"></a>
-        
-        <li><a href="index.html">Home</a></li>
+                    <a href="index.html"><img id="logo" alt="Barnhill Primary School Logo" src="../images/bpslogo.png"></a>
 
-        <li class="dropdown">
-          <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
-          <div id="dropdown-content"> <!-- Opens div class dropdown-content-->
-            <a href="faq.html">FAQ</a>
-            <a href="dates.html">Dates</a>
-            <a href="staff.html">Staff</a>
-            <a href="uniform.html">Uniform</a>
-          </div> <!-- Closes div class dropdown-content -->
-        </li>
+                    <li><a href="index.html">Home</a></li>
 
-        <li><a href="news.html">News</a></li>
-        <li><a href="homeLearning.html">Home Learning</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <button class="open-button" onclick="openForm()">Login</button>
-  
-      
+                    <li class="dropdown">
+                        <span class="aboutBtn" onclick="abtDrpDwn()">About </span>
+                        <div id="dropdown-content">
+                            <!-- Opens div class dropdown-content-->
+                            <a href="faq.html">FAQ</a>
+                            <a href="dates.html">Dates</a>
+                            <a href="staff.html">Staff</a>
+                            <a href="uniform.html">Uniform</a>
+                        </div> <!-- Closes div class dropdown-content -->
+                    </li>
 
-      </ul>
-  
-      
-  
-  <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-   
-  
-      <label for="login" style="padding: 15px;"><b>Login</b></label>
-      <input type="text" placeholder="Enter Login" name="login" required>
-  
-      <label for="psw" style="padding: 15px;"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <button type="submit" class="btn">Login</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-  </div>
-  
-  
-    </nav>
-  
-  
-  <div class="sub-banner-container"> <!-- Opens div ID hero-banner-container -->
-  
-    <div id="sub-banner-column"> <!-- Opens div ID hero-banner-column -->
-  
-    </div> <!-- Closes div ID hero-banner-column -->
-  
-    <div class="bottom-divide-of-sch-img"> <!-- Opens div ID bottom-divide-of-sch-img -->
-  
-    </div> <!-- Closes div ID bottom-divide-of-sch-img -->
-  
-  </div> <!-- Closes div ID hero-banner-container -->
-  
-  </Header>
-  
-  
-  <h1 id="pageTitle"> Staff</h1>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="homeLearning.html">Home Learning</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="open-button" onclick="openForm()">Login</button>
 
 
-  <div class="gridContainer">
 
-    <h2 class="gridHead"> Leadership: </h2>
-    <h2 class="gridHead"> School: </h2>
-    <h2 class="gridHead"> Nursery: </h2>
-    <table class="gridTable">
-      <tr>
-        <th> Role </th>
-        <th> Teacher(s) </th>
-      </tr>
-      <tr>
-        <td> Head Teacher </td>
-        <td> Mrs Angela Bruce </td>
-      </tr>
-      <tr>
-        <td> Depute Head </td>
-        <td> Mr Philip Smith </td>
-      </tr>
-      <tr>
-        <td> Acting Principal Teacher </td>
-        <td> Mrs Lindsay Alexander </td>
-      </tr>
-    </table>
+                </ul>
 
-    <table class="gridTable">
-      <tr>
-        <th> Class </th>
-        <th> Teacher(s) </th>
-      </tr>
-      <tr>
-        <td> P1a <br> P1b <br> P1c</td>
-        <td> Miss Swan <br> Mrs Bain and Mrs Mackenzie <br> Mrs Fairbairn</td>
-      </tr>
-      <tr>
-        <td> P2a <br> P2b</td>
-        <td> Mrs Hutchison <br> Miss Kemp</td>
-      </tr>
-      <tr>
-        <td> P3a <br> P3b</td>
-        <td> Mrs McVeigh and Mrs Alexander <br> Mr Jones</td>
-      </tr>
-      <tr>
-        <td> P4a <br> P4b</td>
-        <td> Miss Watt and Miss Airlie <br> Mrs Fenton and Mrs J Alexander</td>
-      </tr>
-      <tr>
-        <td> P5a <br> P5b</td>
-        <td> Mrs Stewart <br> Mrs Watt </td>
-      </tr>
-      <tr>
-        <td> P6a <br> P6b</td>
-        <td> Miss Stewart <br> Miss Morrison</td>
-      </tr>
-      <tr>
-        <td> P6/7 </td>
-        <td> Miss Alexander </td>
-      </tr>
-      <tr>
-        <td> P7a <br> P7b </td>
-        <td> Miss Robertson <br> Mrs Goldsmith</td>
-      </tr>
-    </table>
+                <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
 
-    <table class="gridTable">
-      <tr>
-        <th> Role </th>
-        <th> Teacher(s) </th>
-      </tr>
-      <tr>
-        <td> Senior Early Years Practitioner </td>
-        <td> Miss Dall </td>
-      </tr>
-      <tr>
-        <td> Nursery Teacher </td>
-        <td> Mrs Calder </td>
-      </tr>
-      <tr>
-        <td> Early Years Educator </td>
-        <td> Mrs Fenton <br> Miss Ishaq <br> Ms Nicoll </td>
-      </tr>
-      <tr>
-        <td> Early Years Support Assistant </td>
-        <td> Miss Campion <br> Mrs Nadeem </td>
-      </tr>
-      <tr>
-        <td> Early Years Practitioner </td>
-        <td> Miss Ramsay </td>
-      </tr>
-    </table>
-  </div>
-</div>
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
 
 
-  <!-- ------------------- Footer ------------------- -->
+                        <label for="login" style="padding: 15px;"><b>Login</b></label>
+                        <input type="text" placeholder="Enter Login" name="login" required>
 
-<div id="footer">
-    <footer>
-        <h3> Useful Links</h3>
-        
-        <a href="https://twitter.com/BarnhillPrimary"><img
-            src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://secure.glowscotland.org.uk/login/login.htm"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://www.dundeecity.gov.uk/"><img
-            src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
-            style="width: 60px; height:60px;"></a>
-        <a href="http://www.educationscotland.gov.uk/"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
-            style="width: 60px; height:60px;"></a>
-        <a href="https://app.parentpay.com/public/client/security/v2/#/login"><img
-            src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
-            style="width: 60px; height:60px;"></a>
-      
-        <p id="cu">Contact Us
-          <br><span id="button">Settings</span></p>
+                        <label for="psw" style="padding: 15px;"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <p id="cr">&#169; Barnhill Primary School 2023</p>
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
 
 
-    </footer>
-  </div>
+            </nav>
+            <div id="hamburger-menu">
+                <button class="hamburger-button"> ☰ </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="dates.html">Dates</a>
+                    <a href="staff.html">Staff</a>
+                    <a href="uniform.html">Uniform</a>
+                    <a href="news.html">News</a>
+                    <a href="homeLearning.html">Home Learning</a>
+                    <a href="contact.html">Contact</a>
+
+
+                </div>
+            </div>
+        </header>
+
+
+        <h1 id="pageTitle"> Staff</h1>
+
+
+        <div class="gridContainer">
+
+            <h2 class="gridHead"> Leadership: </h2>
+            <h2 class="gridHead"> School: </h2>
+            <h2 class="gridHead"> Nursery: </h2>
+            <table class="gridTable">
+                <tr>
+                    <th> Role </th>
+                    <th> Teacher(s) </th>
+                </tr>
+                <tr>
+                    <td> Head Teacher </td>
+                    <td> Mrs Angela Bruce </td>
+                </tr>
+                <tr>
+                    <td> Depute Head </td>
+                    <td> Mr Philip Smith </td>
+                </tr>
+                <tr>
+                    <td> Acting Principal Teacher </td>
+                    <td> Mrs Lindsay Alexander </td>
+                </tr>
+            </table>
+
+            <table class="gridTable">
+                <tr>
+                    <th> Class </th>
+                    <th> Teacher(s) </th>
+                </tr>
+                <tr>
+                    <td> P1a <br> P1b <br> P1c</td>
+                    <td> Miss Swan <br> Mrs Bain and Mrs Mackenzie <br> Mrs Fairbairn</td>
+                </tr>
+                <tr>
+                    <td> P2a <br> P2b</td>
+                    <td> Mrs Hutchison <br> Miss Kemp</td>
+                </tr>
+                <tr>
+                    <td> P3a <br> P3b</td>
+                    <td> Mrs McVeigh and Mrs Alexander <br> Mr Jones</td>
+                </tr>
+                <tr>
+                    <td> P4a <br> P4b</td>
+                    <td> Miss Watt and Miss Airlie <br> Mrs Fenton and Mrs J Alexander</td>
+                </tr>
+                <tr>
+                    <td> P5a <br> P5b</td>
+                    <td> Mrs Stewart <br> Mrs Watt </td>
+                </tr>
+                <tr>
+                    <td> P6a <br> P6b</td>
+                    <td> Miss Stewart <br> Miss Morrison</td>
+                </tr>
+                <tr>
+                    <td> P6/7 </td>
+                    <td> Miss Alexander </td>
+                </tr>
+                <tr>
+                    <td> P7a <br> P7b </td>
+                    <td> Miss Robertson <br> Mrs Goldsmith</td>
+                </tr>
+            </table>
+
+            <table class="gridTable">
+                <tr>
+                    <th> Role </th>
+                    <th> Teacher(s) </th>
+                </tr>
+                <tr>
+                    <td> Senior Early Years Practitioner </td>
+                    <td> Miss Dall </td>
+                </tr>
+                <tr>
+                    <td> Nursery Teacher </td>
+                    <td> Mrs Calder </td>
+                </tr>
+                <tr>
+                    <td> Early Years Educator </td>
+                    <td> Mrs Fenton <br> Miss Ishaq <br> Ms Nicoll </td>
+                </tr>
+                <tr>
+                    <td> Early Years Support Assistant </td>
+                    <td> Miss Campion <br> Mrs Nadeem </td>
+                </tr>
+                <tr>
+                    <td> Early Years Practitioner </td>
+                    <td> Miss Ramsay </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- ------------------- Footer ------------------- -->
+
+    <div id="footer">
+        <footer>
+            <h3> Useful Links</h3>
+
+            <a href="https://twitter.com/BarnhillPrimary">
+                <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://secure.glowscotland.org.uk/login/login.htm">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://www.dundeecity.gov.uk/">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="http://www.educationscotland.gov.uk/">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
+                     style="width: 60px; height:60px;">
+            </a>
+            <a href="https://app.parentpay.com/public/client/security/v2/#/login">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
+                     style="width: 60px; height:60px;">
+            </a>
+
+            <p id="cu">
+                Contact Us
+                <br><span id="button">Settings</span>
+            </p>
+
+            <p id="cr">&#169; Barnhill Primary School 2023</p>
+
+
+        </footer>
+    </div>
 
 </body>
 
