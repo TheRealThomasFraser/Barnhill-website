@@ -13,7 +13,6 @@
   <div id="mainBody"> <!-- Opens div class mainBody -->
 
   <!-- ------------------- Navigation ------------------- -->
-  <header>
 
   <nav>
 
@@ -84,13 +83,13 @@
 
 
       <h1 id="pageTitle"> Uniform </h1>
-      <p> At Barnhill, we believe that uniform plays an important part in unifying our pupils both together and with the
+      <p id="txt"> At Barnhill, we believe that uniform plays an important part in unifying our pupils both together and with the
         school. We offer a range of official school uniform items in collaboration with BEUniforms and we allow some
         general formal attire. Please note that the terms "Boys" and "Girls' are included below to denote standard
         sizing conventions. We encourage our pupils to wear whatever they feel most comfortable in within our
         regulations. If you have any queries about uniform, feel free to <a href="contact.html"> contact </a> us.</p>
 
-      <h2 onclick="hideSection('torso')"> Torso </h2>
+      <h2 class="dropdownTitle" onclick="hideItem('torso', 'UT')"> Torso <p id="UT" style="display:inline;">&#9660;</p></h2>
 
       <div class="uniformContainer" id="torso">
         <a href="https://www.border-embroideries.co.uk/barnhill-primary-school-polo-101208.html" class="productCard">
@@ -195,7 +194,7 @@
       </div>
 
 
-      <h2 onclick="hideSection('trsrSkirts')"> Trousers & Skirts</h2>
+      <h2 class="dropdownTitle" onclick="hideItem('trsrSkirts', 'UTS')"> Trousers and Skirts <p id="UTS" style="display:inline;">&#9660;</p></h2>
 
       <div class="uniformContainer" id="trsrSkirts">
         <a href="https://www.border-embroideries.co.uk/she-innovation-boys-shorts.html" class="productCard">
@@ -226,7 +225,7 @@
 
       </div>
 
-      <h2 onclick="hideSection('footwear')"> Footwear</h2>
+      <h2 class="dropdownTitle" onclick="hideItem('footwear', 'UF')"> Footwear <p id="UF" style="display:inline;">&#9660;</p></h2>
       <div class="uniformContainer" id="footwear">
         <a href="https://www.sportsdirect.com/back-to-school/school-footwear/black-school-shoes" class="productCard">
           <img src="https://www.sportsdirect.com/images/products/09308003_l.jpg">
@@ -234,7 +233,7 @@
         </a>
       </div>
 
-      <h2 onclick="hideSection('misc')"> Misc</h2>
+      <h2 class="dropdownTitle" onclick="hideItem('misc', 'UM')"> Misc. <p id="UM" style="display:inline;">&#9660;</p></h2>
       <div class="uniformContainer" id="misc">
         <a href="https://www.border-embroideries.co.uk/barnhill-ps-45-striped-tie.html" class="productCard">
           <img
@@ -255,16 +254,7 @@
 
 
     </div>
-    <script>
-      function hideSection(sectionID) {
-        var section = document.getElementById(sectionID);
-        if (section.style.display == "none") {
-          section.style.display = "";
-        } else {
-          section.style.display = "none"
-        }
-      }
-    </script>
+   
 
     <!-- ------------------- Footer ------------------- -->
 
@@ -288,11 +278,11 @@
               src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
               style="width: 60px; height:60px;"></a>
         
-          <button>Settings</button>
-          <p>Contact Us
-            <br></p>
+          
+          <p id="cu">Contact Us
+            <br><span id="button">Settings</span></p>
   
-          <p>&#169; Barnhill Primary School 2023</p>
+          <p id="cr">&#169; Barnhill Primary School 2023</p>
   
   
       </footer>
