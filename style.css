@@ -293,6 +293,7 @@ tr:nth-child(even) {
 #cu,
 #button {
     float: right;
+    color:white;
 }
 
 .footer a,
@@ -314,6 +315,19 @@ tr:nth-child(even) {
     background-color: #309167;
     width: 100%;
     z-index: 1;
+}
+#contactLink{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+
+#contactLink:hover{
+    text-decoration:none;
+    color:rgb(160, 160, 160);
+}
+#button:hover{
+    color: rgb(160, 160, 160);
+    cursor: pointer;
 }
 
 /* ------------------- Index ------------------- */
