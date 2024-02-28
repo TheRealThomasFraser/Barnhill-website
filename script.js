@@ -45,11 +45,10 @@ function shrinkText() {
 
 
 
-function changeFont() {
-    var elements =
-        document.querySelectorAll('body *');
+function changeFont(font) {
+    var elements = document.querySelectorAll('body *');
     elements.forEach(function (element) {
-        element.style.fontFamily = 'Helvetica';
+        element.style.fontFamily = font;
     });
 }
 
