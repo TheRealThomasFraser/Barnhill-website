@@ -98,14 +98,9 @@
 
         <h1 id="pageTitle"> Staff</h1>
       
-
-        <div class="gridContainer">
-            <div class="row">
-                <div class="column">
-                    <h2 class="gridHead"> Leadership: </h2>
-                    <h2 class="gridHead"> School: </h2>
-                    <h2 class="gridHead"> Nursery: </h2>
-                    <table class="gridTable">
+        <h2 class="dropdownTitle" onclick="hideItem('staffLTable', 'SL')"> Leadership <p id="SL" style="display:inline;">&#9660;</p> </h2>
+                    
+                    <table id="staffLTable">
                         <tr>
                             <th> Role </th>
                             <th> Teacher(s) </th>
@@ -123,9 +118,8 @@
                             <td> Mrs Lindsay Alexander </td>
                         </tr>
                     </table>
-                </div>
-                <div class="column">
-                    <table class="gridTable">
+                    <h2 class="dropdownTitle" onclick="hideItem('staffSTable', 'SS')"> School <p id="SS" style="display:inline;">&#9660;</p> </h2>
+                    <table id="staffSTable">
                         <tr>
                             <th> Class </th>
                             <th> Teacher(s) </th>
@@ -163,13 +157,8 @@
                             <td> Miss Robertson <br> Mrs Goldsmith</td>
                         </tr>
                     </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="column">
-            <table class="gridTable">
+                    <h2 class="dropdownTitle" onclick="hideItem('staffNTable', 'SN')"> Nursery <p id="SN" style="display:inline;">&#9660;</p> </h2>
+            <table id="staffNTable">
                 <tr>
                     <th> Role </th>
                     <th> Teacher(s) </th>
@@ -196,7 +185,6 @@
                 </tr>
             </table>
         </div>
-    </div>
 
 
     <!-- ------------------- Footer ------------------- -->

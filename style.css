@@ -415,18 +415,6 @@ td {
 }
 
 
-
-.row {
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-
 /* Clearfix (clear floats) */
 .row::after {
     content: "";
@@ -449,11 +437,6 @@ th, td {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-
-
-
-
 
 .aims {
     text-align: center;
