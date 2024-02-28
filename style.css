@@ -23,7 +23,7 @@ body {
 
 
 .sub-banner-container {
-    background-image: url(/images/prim-2.jpg) !important;
+    background-image: url(prim-2.jpg) !important;
     bottom: 0;
     height: 65vh;
     background-repeat: no-repeat;
@@ -87,51 +87,51 @@ body {
     margin: 50px auto;
 }
 
-/* Full-width input fields */
-.form-container input[type=text],
-.form-container input[type=password] {
-    width: 92%;
-    padding: 15px;
-    margin: 21px 2px 30px 0;
-    border: none;
-    background: #f1f1f1;
-}
+    /* Full-width input fields */
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 92%;
+        padding: 15px;
+        margin: 21px 2px 30px 0;
+        border: none;
+        background: #f1f1f1;
+    }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus,
-.form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+        /* When the inputs get focus, do something */
+        .form-container input[type=text]:focus,
+        .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-    background: linear-gradient(90deg, rgba(15, 163, 74, 1) 28%, rgba(187, 185, 10, 1) 100%);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+        background: linear-gradient(90deg, rgba(15, 163, 74, 1) 28%, rgba(187, 185, 10, 1) 100%);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-    background: linear-gradient(90deg, rgba(15, 163, 74, 1) 28%, rgba(187, 185, 10, 1) 100%);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+        background: linear-gradient(90deg, rgba(15, 163, 74, 1) 28%, rgba(187, 185, 10, 1) 100%);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover,
-.open-button:hover {
-    opacity: 1;
-}
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
 
 
 /* ------------------- Navigation ------------------- */
@@ -150,41 +150,41 @@ nav {
     border-color: rgb(0, 0, 0);
 }
 
-nav ul {
-    cursor: pointer;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
+    nav ul {
+        cursor: pointer;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
 
-nav li {
-    float: left;
-    cursor: pointer;
-}
+    nav li {
+        float: left;
+        cursor: pointer;
+    }
 
-nav li a,
-.aboutBtn {
-    cursor: pointer;
-    border: none;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    width: 150px;
-}
+        nav li a,
+        .aboutBtn {
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            width: 150px;
+        }
 
-nav li a:hover,
-.dropdown:hover .aboutBtn {
-    transition: 0.2s;
-    background-color: white;
-    color: black;
-}
+            nav li a:hover,
+            .dropdown:hover .aboutBtn {
+                transition: 0.2s;
+                background-color: white;
+                color: black;
+            }
 
 .aboutBtn {
     position: relative;
@@ -198,18 +198,18 @@ nav #dropdown-content {
     z-index: 1;
 }
 
-nav #dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+    nav #dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
 
-nav #dropdown-content a:hover {
-    background-color: white;
-    color: black;
-}
+        nav #dropdown-content a:hover {
+            background-color: white;
+            color: black;
+        }
 
 .nav-links {
     display: none;
@@ -217,16 +217,16 @@ nav #dropdown-content a:hover {
     color: white;
 }
 
-.nav-links a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-}
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
 
-.nav-links a:hover {
-    background-color: #111;
-}
+        .nav-links a:hover {
+            background-color: #111;
+        }
 
 
 /* ------------------- Headings ------------------- */
@@ -309,12 +309,10 @@ tr:nth-child(even) {
 }
 
 #settingsPopup {
-
     display: none;
     background-color: #309167;
     width: 100%;
     z-index: 1;
-
 }
 
 /* ------------------- Index ------------------- */
@@ -347,13 +345,13 @@ tr:nth-child(even) {
     margin-bottom: 50px;
 }
 
-.welcomeMsg h2 {
-    font-size: 50px;
-}
+    .welcomeMsg h2 {
+        font-size: 50px;
+    }
 
-.welcomeMsg p {
-    font-size: 17px;
-}
+    .welcomeMsg p {
+        font-size: 17px;
+    }
 
 .slideshow-container {
     max-width: 1000px;
@@ -384,11 +382,11 @@ tr:nth-child(even) {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 
 /* Caption text */
 .text {
@@ -422,10 +420,10 @@ tr:nth-child(even) {
     transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
 
 /* Fading animation */
 .fade {
@@ -451,15 +449,15 @@ tr:nth-child(even) {
     margin-top: 20px;
 }
 
-.aims ul {
-    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
-    list-style: none;
-    margin-bottom: 40px;
-}
+    .aims ul {
+        font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+        list-style: none;
+        margin-bottom: 40px;
+    }
 
-.aims li {
-    padding-top: 20px;
-}
+    .aims li {
+        padding-top: 20px;
+    }
 
 .column2 {
     display: inline;
@@ -597,11 +595,11 @@ tr:nth-child(even) {
     background: linear-gradient(360deg, rgba(48, 145, 103, 1) 60%, rgba(255, 255, 255, 0) 100%);
 }
 
-.J-leader-msg p {
-    text-align: center;
-    font-size: 20px;
-    padding: 5%;
-}
+    .J-leader-msg p {
+        text-align: center;
+        font-size: 20px;
+        padding: 5%;
+    }
 
 .sway-wrapper {
     padding-top: 20px;
@@ -650,16 +648,16 @@ tr:nth-child(even) {
     padding: 5%;
 }
 
-#email ul,
-#tel ul {
-    list-style-type: none;
-    padding: 20px;
-}
+    #email ul,
+    #tel ul {
+        list-style-type: none;
+        padding: 20px;
+    }
 
-#email li,
-#tel li {
-    padding: 5px;
-}
+    #email li,
+    #tel li {
+        padding: 5px;
+    }
 
 
 .wrapRndCon {
@@ -704,10 +702,12 @@ tr:nth-child(even) {
 }
 
 /*** Standard Desktop Only ***/
-@media all and (min-width: 1100px) and (max-width: 1405px) {}
+@media all and (min-width: 1100px) and (max-width: 1405px) {
+}
 
 /*** Tablet And Below ***/
-@media all and (max-width: 980px) {}
+@media all and (max-width: 980px) {
+}
 
 /*** Tablet Only ***/
 @media all and (min-width: 768px) and (max-width: 980px) {
