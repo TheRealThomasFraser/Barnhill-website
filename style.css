@@ -277,8 +277,13 @@ h2 {
 }
 
 #settingsPopup {
+
     display: none;
-}
+    background-color: #309167;
+    width: 100%;
+    z-index: 1;
+ 
+   }
 
 /* ------------------- Index ------------------- */
 

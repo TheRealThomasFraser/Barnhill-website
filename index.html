@@ -251,6 +251,20 @@
             </div> <!-- Closes div id HTmain -->
         </div> <!-- Closes div id HTtext -->
 
+        <div id="settingsPopup">
+
+            <h1 style="display:block;"> Text Size: </h1>
+            <h2 onclick="shrinkText()"> - </h2>
+            <h2 onclick="enlargeText()"> + </h2>
+      
+            <h1 style="display:block;"> Fonts: </h2>
+            <h2 onclick="changeFont('Georgia')"> Georgia </h2>
+            <h2 onclick="changeFont('Courier New')"> Courier New </h2>
+            <h2 onclick="changeFont('Arial')"> Arial </h2>
+            <h2 onclick="changeFont('Verdana')"> Verdana </h2>
+      
+          </div>
+
     </div>
 
     <!-- ------------------- Footer ------------------- -->
@@ -281,10 +295,8 @@
                      style="width: 60px; height:60px;">
             </a>
 
-            <p id="cu">
-                Contact Us
-                <br>   <span id="button">Settings</span>
-            </p>
+            <p id="cu"> <a href="contact.html"> Contact Us </a>
+                <br> <span id="button" onclick="showSettings()">Settings</span></p>
 
             <p id="cr">&#169; Barnhill Primary School 2023</p>
 
