@@ -643,10 +643,28 @@ tr:nth-child(even) {
     margin-left: 20%;
     padding: 5%;
 }
+#telLink{
+    text-decoration:none;
+    color:black;
+}
+
+#telLink:hover{
+    color:white;
+}
+
 
 #email {
     margin-left: 20%;
     padding: 5%;
+}
+#email ul li a{
+    text-decoration:none;
+    color:black;
+}
+
+#email ul li a:hover{
+    text-decoration:none;
+    color:white;
 }
 
     #email ul,
