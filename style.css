@@ -325,6 +325,10 @@ tr:nth-child(even) {
     text-decoration:none;
     color:rgb(160, 160, 160);
 }
+#contactLink:visited{
+    color:white;
+    text-decoration:none;
+}
 #button:hover{
     color: rgb(160, 160, 160);
     cursor: pointer;
