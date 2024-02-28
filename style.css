@@ -328,7 +328,7 @@ tr:nth-child(even) {
 }
 
 .hero-banner-container {
-    background-image: url(../images/prim-2.jpg) !important;
+    background-image: url(images/prim-2.jpg) !important;
     position: relative;
     background-color: #fff;
     background-position: 50%;
