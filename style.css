@@ -18,11 +18,12 @@ body {
     min-height: 85.1vh;
 }
 
+
 /* ------------------- Header ------------------- */
 
 
 .sub-banner-container {
-    background-image: url(images/prim-2.jpg) !important;
+    background-image: url(/images/prim-2.jpg) !important;
     bottom: 0;
     height: 65vh;
     background-repeat: no-repeat;
@@ -49,8 +50,8 @@ body {
 }
 
 
-
 /* ------------------- Login ------------------- */
+
 
 .open-button {
     background: linear-gradient(90deg, rgba(15, 163, 74, 1) 28%, rgba(187, 185, 10, 1) 100%);
@@ -132,7 +133,9 @@ body {
     opacity: 1;
 }
 
+
 /* ------------------- Navigation ------------------- */
+
 
 #logo {
     width: 50px;
@@ -183,8 +186,6 @@ nav li a:hover,
     color: black;
 }
 
-
-
 .aboutBtn {
     position: relative;
 }
@@ -227,6 +228,7 @@ nav #dropdown-content a:hover {
     background-color: #111;
 }
 
+
 /* ------------------- Headings ------------------- */
 
 
@@ -249,10 +251,33 @@ h2 {
     display: block;
 }
 
+
 /* ------------------- Tables ------------------- */
 
 
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 
 /* ------------------- Footer ------------------- */
@@ -304,16 +329,13 @@ h2 {
 }
 
 .hero-banner-container {
-    background-image: url(images/prim-2.jpg) !important;
+    background-image: url(/images/prim-2.jpg) !important;
     position: relative;
     background-color: #fff;
     background-position: 50%;
     background-size: 100%;
     background-size: cover;
 }
-
-
-
 
 #hero-banner-column {
     min-height: 70vh;
@@ -421,31 +443,6 @@ h2 {
     }
 }
 
-
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-}
-
-th,
-td {
-    text-align: left;
-    padding: 16px;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 .aims {
     text-align: center;
     background: #309167;
@@ -524,7 +521,9 @@ tr:nth-child(even) {
     text-align: center;
 }
 
+
 /* ------------------- FAQ ------------------- */
+
 
 .QnA {
     margin-top: 20px;
@@ -541,17 +540,15 @@ tr:nth-child(even) {
     background-color: #FDE992;
 }
 
-
-
 /* ------------------- Dates ------------------- */
+
+
 #keyDts {
     margin-left: 10%;
 }
 
+
 /* ------------------- Staff ------------------- */
-
-
-
 
 
 /* ------------------- Uniform ------------------- */
@@ -583,15 +580,16 @@ tr:nth-child(even) {
     display: block;
 }
 
-
-
 #txt {
     padding: 40px;
     text-align: center;
     margin-bottom: 20px;
 }
 
+
 /* ------------------- News ------------------- */
+
+
 .J-leader-msg {
     text-align: center;
     padding: 40px;
@@ -617,7 +615,6 @@ tr:nth-child(even) {
 }
 
 
-
 /* ------------------- Home Learning ------------------- */
 
 
@@ -627,10 +624,7 @@ tr:nth-child(even) {
 }
 
 
-
-
 /* ------------------- Contact ------------------- */
-
 
 
 #map {
@@ -668,13 +662,14 @@ tr:nth-child(even) {
 }
 
 
-
 .wrapRndCon {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 5%;
     padding: 10px;
 }
+
+/* ------------------- Smaller Screen Nav ------------------- */
 
 .hamburger-button {
     background-color: #333;
@@ -746,7 +741,6 @@ tr:nth-child(even) {
 /*** Smartphone Portrait ***/
 @media all and (max-width: 479px) {
     /* On smaller screens, decrease text size */
-
 
     .prev,
     .next,
