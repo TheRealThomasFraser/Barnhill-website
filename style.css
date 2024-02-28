@@ -299,6 +299,7 @@ tr:nth-child(even) {
 .footer h3,
 #cr {
     text-align: left;
+    text-decoration: none;
 }
 
 
