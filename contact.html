@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Contact</title>
+    <title>Dates</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -81,122 +81,343 @@
             </div>
         </header>
 
-        <!-- ------------------- Index Header ------------------- -->
+        <div class="mainBody">
+            <!-- ------------------- Index Header ------------------- -->
 
 
-        <div class="hero-banner-container">
-            <!-- Opens div ID hero-banner-container -->
+            <div class="hero-banner-container">
+                <!-- Opens div ID hero-banner-container -->
 
-            <div id="hero-banner-column">
-                <!-- Opens div ID hero-banner-column -->
+                <div id="hero-banner-column">
+                    <!-- Opens div ID hero-banner-column -->
 
-            </div> <!-- Closes div ID hero-banner-column -->
+                </div> <!-- Closes div ID hero-banner-column -->
 
-            <div class="bottom-divide-of-sch-img">
-                <!-- Opens div ID bottom-divide-of-sch-img -->
+                <div class="bottom-divide-of-sch-img">
+                    <!-- Opens div ID bottom-divide-of-sch-img -->
 
-            </div> <!-- Closes div ID bottom-divide-of-sch-img -->
+                </div> <!-- Closes div ID bottom-divide-of-sch-img -->
 
-        </div> <!-- Closes div ID hero-banner-container -->
-        <!-- ------------------- Main Body ------------------- -->
+            </div> <!-- Closes div ID hero-banner-container -->
+            <!-- ------------------- Main Body ------------------- -->
 
-        <h1 id="pageTitle">Contact</h1>
-        <div class="wrapRndCon">
-            <div class="wrapper-contact">
-                <div id="tel">
-                    <h2> Tel: </h2>
-                    <ul>
-                        <li><a id="telLink" href="tel:01382436993">School: 01382 436993</a></li>
+
+            <h1 id="pageTitle"> Dates</h1>
+
+            <div class="calendar-container">
+                <header class="calendar-header">
+                    <p class="calendar-current-date"></p>
+                    <div class="calendar-navigation">
+                        <span id="calendar-prev" class="material-symbols-rounded"> &#x21E6;</span>
+                        <span id="calendar-next" class="material-symbols-rounded"> &#x21E8; </span>
+                    </div>
+                </header>
+                <div class="calendar-body">
+                    <ul class="calendar-weekdays">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
                     </ul>
-                </div>
-
-                <div id="email">
-                    <h2>Email</h2>
-                    <ul>
-                        <li><a href="mailto:abruce174@dundeeschools.scot">Head teacher: Angela Bruce</a></li>
-                        <li><a href="mailto:psmith966@dundeeschools.scot">Principal: Philip Smith</a></li>
-                        <br>      
-                        <li><a href="mailto:barnhillprimary@dundeeschools.scot">School: Barnhill Primary</a></li>
-                    </ul>
+                    <ul class="calendar-dates"></ul>
                 </div>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2203.3672835063953!2d-2.8576694596827665!3d56.478660535962945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865ef4b049440f%3A0xbf911ad0ca76e7f8!2sBarnhill%20Primary%20School!5e0!3m2!1sen!2suk!4v1708007344974!5m2!1sen!2suk"
-                    id="map" width="400" height="400" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="keyDts">
+                <div id="dateLink">
+                    <h2> Term Dates</a><br></h2>
+                    <p>
+                        <Br>View the Term Dates <a href="https://www.dundeecity.gov.uk/service-area/children-and-families-service/education/school-term-dates">here</a>
+                        for dundee city council.
+                    </p>
+                    <Br>
+                    <h2> Spring Term</h2>
 
-        </div>
+                    <p>
+                        <Br>
+                        Monday 8 January 2024 - All resume<br>
+                        Friday 16 February 2024 - Mid term, All break<br>
+                        Monday 19 February 2024 - Mid term, All break<br>
+                        Tuesday 20 February 2024 - In service day, schools closed<br>
+                        Thursday 28 March 2024 - Term ends<br>
+                        Spring Holiday<br><br>
 
+                        Friday 29 March 2024 - Holiday starts<br>
+                        Friday 12 April 2024 - Holiday ends<br>
+                        Summer Term<br><br>
 
-        <div id="settingsPopup">
+                        Monday 15 April 2024 - All resume<br>
+                        Thursday 2 May 2024 - In service day, schools closed<br>
+                        Monday 6 May 2024 - May Day, schools closed<br>
+                        Monday 27 May 2024 - Victoria Day, schools closed<br>
+                        Friday 28 June 2024 - Term ends<br><br>
+                    </p>
+                </div>
+            </div>
 
-            <h1 style="display:block;"> Text Size: </h1>
-            <h2 onclick="shrinkText()"> - </h2>
-            <h2 onclick="enlargeText()"> + </h2>
-
-            <h1 style="display:block;">
-                Fonts: </h2>
-                <h2 onclick="changeFont('Georgia')"> Georgia </h2>
-                <h2 onclick="changeFont('Courier New')"> Courier New </h2>
-                <h2 onclick="changeFont('Arial')"> Arial </h2>
-                <h2 onclick="changeFont('Verdana')"> Verdana </h2>
-
-        </div>
-
-
-
-
-    </div>
-    <!-- ------------------- Footer ------------------- -->
-
-    <div id="footer">
-        <footer>
-            <h3> Useful Links</h3>
-
-            <a href="https://twitter.com/BarnhillPrimary">
-                <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
-                     style="width: 60px; height:60px;">
-            </a>
-            <a href="https://secure.glowscotland.org.uk/login/login.htm">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
-                     style="width: 60px; height:60px;">
-            </a>
-            <a href="https://www.dundeecity.gov.uk/">
-                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api"
-                     alt="Dundee City Council" style="width: 60px; height:60px;">
-            </a>
-            <a href="http://www.educationscotland.gov.uk/">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api"
-                     alt="Education Scotland" style="width: 60px; height:60px;">
-            </a>
-            <a href="https://app.parentpay.com/public/client/security/v2/#/login">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
-                     style="width: 60px; height:60px;">
-            </a>
-
-
-            <p id="cu">
-                <a id="contactLink" href="contact.html"> Contact Us </a>
-                <br> <span id="button" onclick="showSettings()">Settings</span>
-            </p>
-
-            <p id="cr">&#169; Barnhill Primary School 2023</p>
-
-
-        </footer>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelector('.hamburger-button').addEventListener('click', function () {
-                var navLinks = document.querySelector('.nav-links');
-                if (navLinks.style.display === 'none' || navLinks.style.display === '') {
-                    navLinks.style.display = 'block';
-                } else {
-                    navLinks.style.display = 'none';
+            <style>
+                .calendar-container {
+                    background: #fff;
+                    width: 450px;
+                    border-radius: 10px;
+                    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+                    margin-left: 35%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
+
+                    .calendar-container header {
+                        display: flex;
+                        padding: 25px 30px 10px;
+                        justify-content: space-between;
+                        height: 200px;
+                        background-position: 75% 25%;
+                        background-image: url(https://i2-prod.dailyrecord.co.uk/incoming/article27317686.ece/ALTERNATES/s810/0_barnhillprimary2.png);
+                    }
+
+                header .calendar-navigation {
+                    display: flex;
+                }
+
+                    header .calendar-navigation span {
+                        line-height: 38px;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: 3em;
+                    }
+
+                .calendar-navigation span:last-child {
+                    margin-right: -10px;
+                }
+
+                header .calendar-navigation span:hover {
+                    background: #000000;
+                    height: fit-content;
+                    cursor: pointer;
+                }
+
+                header .calendar-current-date {
+                    font-weight: 500;
+                    font-size: 1.3rem;
+                    color: white;
+                }
+
+                .calendar-body {
+                    padding: 20px;
+                }
+
+                    .calendar-body ul {
+                        list-style: none;
+                        flex-wrap: wrap;
+                        display: flex;
+                        text-align: center;
+                    }
+
+                    .calendar-body .calendar-dates {
+                        margin-bottom: 20px;
+                    }
+
+                    .calendar-body li {
+                        width: calc(100% / 7);
+                        font-size: 1.07rem;
+                        color: #414141;
+                    }
+
+                    .calendar-body .calendar-weekdays li {
+                        cursor: default;
+                        font-weight: 500;
+                    }
+
+                    .calendar-body .calendar-dates li {
+                        margin-top: 30px;
+                        position: relative;
+                        z-index: 1;
+                        cursor: pointer;
+                    }
+
+                .calendar-dates li.inactive {
+                    color: #aaa;
+                }
+
+                .calendar-dates li.active {
+                    color: #fff;
+                }
+
+                .calendar-dates li::before {
+                    position: absolute;
+                    content: "";
+                    z-index: -1;
+                    top: 50%;
+                    left: 50%;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .calendar-dates li.active::before {
+                    background: green;
+                }
+
+                .calendar-dates li:not(.active):hover::before {
+                    background: #e4e1e1;
+                }
+                .calendar-container {
+                    margin: auto;
+                    max-width: 400px;
+                }
+            
+            </style>
+            <script>
+                let date = new Date();
+                let year = date.getFullYear();
+                let month = date.getMonth();
+
+                const day = document.querySelector(".calendar-dates");
+                const currdate = document.querySelector(".calendar-current-date");
+                const prenexIcons = document.querySelectorAll(".calendar-navigation span");
+
+                const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                const makeCal = () => {
+                    // get the first day of the month
+                    let dayone = new Date(year, month, 1).getDay();
+
+                    // get the last date of the month
+                    let lastdate = new Date(year, month + 1, 0).getDate();
+
+
+                    // get the day of the last date of the month
+                    let dayend = new Date(year, month, lastdate).getDay();
+
+                    // get the last date of the previous month
+                    let monthlastdate = new Date(year, month, 0).getDate();
+                    let lit = ""; // variable to store the generated calendar HTML
+
+                    // loop to add the last dates of the previous month
+                    for (let i = dayone; i > 0; i--) {
+                        lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
+                    }
+
+                    // loop to add the dates of the current month
+                    for (let i = 1; i <= lastdate; i++) {
+                        // check if the current date is today
+                        let isToday = i === date.getDate() && month === new Date().getMonth() && year === new Date().getFullYear() ? "active" : "";
+                        lit += `<li class="${isToday}">${i}</li>`;
+                    }
+
+                    // loop to add the first dates of the next month
+                    for (let i = dayend; i < 6; i++) {
+                        lit += `<li class="inactive">${i - dayend + 1}</li>`
+                    }
+
+                    // update the text of the current date element with the formatted current month and year
+                    currdate.innerText = `${months[month]} ${year}`;
+
+                    // update the HTML of the dates element with the generated calendar
+                    day.innerHTML = lit;
+                }
+
+                makeCal();
+
+                // Attach a click event listener to each icon
+                prenexIcons.forEach(icon => {
+
+                    // When an icon is clicked
+                    icon.addEventListener("click", () => {
+                        // Check if the icon is "calendar-prev" or "calendar-next"
+                        month = icon.id === "calendar-prev" ? month - 1 : month + 1;
+
+                        // Check if the month is out of range
+                        if (month < 0 || month > 11) {
+                            // Set the date to the first day of the month with the new year
+                            date = new Date(year, month, new Date().getDate());
+                            // Set the year to the new year
+                            year = date.getFullYear();
+                            // Set the month to the new month
+                            month = date.getMonth();
+                        }
+
+                        else {
+                            // Set the date to the current date
+                            date = new Date();
+                        }
+
+                        // Call the manipulate function to update the calendar display
+                        makeCal();
+                    });
+                });
+            </script>
+
+            <div id="settingsPopup">
+
+                <h1 style="display:block;"> Text Size: </h1>
+                <h2 onclick="shrinkText()"> - </h2>
+                <h2 onclick="enlargeText()"> + </h2>
+
+                <h1 style="display:block;">
+                    Fonts: </h2>
+                    <h2 onclick="changeFont('Georgia')"> Georgia </h2>
+                    <h2 onclick="changeFont('Courier New')"> Courier New </h2>
+                    <h2 onclick="changeFont('Arial')"> Arial </h2>
+                    <h2 onclick="changeFont('Verdana')"> Verdana </h2>
+
+            </div>
+
+        </div> <!-- Closes div class mainBody -->
+        <!-- ------------------- Footer ------------------- -->
+
+        <div id="footer">
+            <footer>
+                <h3> Useful Links</h3>
+
+                <a href="https://twitter.com/BarnhillPrimary">
+                    <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
+                         style="width: 60px; height:60px;">
+                </a>
+                <a href="https://secure.glowscotland.org.uk/login/login.htm">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
+                         style="width: 60px; height:60px;">
+                </a>
+                <a href="https://www.dundeecity.gov.uk/">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api"
+                         alt="Dundee City Council" style="width: 60px; height:60px;">
+                </a>
+                <a href="http://www.educationscotland.gov.uk/">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api"
+                         alt="Education Scotland" style="width: 60px; height:60px;">
+                </a>
+                <a href="https://app.parentpay.com/public/client/security/v2/#/login">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
+                         style="width: 60px; height:60px;">
+                </a>
+
+
+                <p id="cu">
+                    <a id="contactLink" href="contact.html"> Contact Us </a>
+                    <br> <span id="button" onclick="showSettings()">Settings</span>
+                </p>
+
+                <p id="cr">&#169; Barnhill Primary School 2023</p>
+
+
+            </footer>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.hamburger-button').addEventListener('click', function () {
+                    var navLinks = document.querySelector('.nav-links');
+                    if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                        navLinks.style.display = 'block';
+                    } else {
+                        navLinks.style.display = 'none';
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>

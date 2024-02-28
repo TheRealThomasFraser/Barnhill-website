@@ -293,7 +293,7 @@ tr:nth-child(even) {
 #cu,
 #button {
     float: right;
-    color:white;
+    color: white;
 }
 
 .footer a,
@@ -316,20 +316,23 @@ tr:nth-child(even) {
     width: 100%;
     z-index: 1;
 }
-#contactLink{
-    text-decoration:none;
-    color:rgb(255, 255, 255);
+
+#contactLink {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
-#contactLink:hover{
-    text-decoration:none;
-    color:rgb(160, 160, 160);
-}
-#contactLink:visited{
-    color:white;
-    text-decoration:none;
-}
-#button:hover{
+    #contactLink:hover {
+        text-decoration: none;
+        color: rgb(160, 160, 160);
+    }
+
+    #contactLink:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+#button:hover {
     color: rgb(160, 160, 160);
     cursor: pointer;
 }
@@ -624,6 +627,7 @@ tr:nth-child(even) {
     padding-top: 20px;
     margin: 0 auto;
     text-align: center;
+    max-width: 500px;
 }
 
 .background-wrapper {
@@ -661,29 +665,31 @@ tr:nth-child(even) {
     margin-left: 20%;
     padding: 5%;
 }
-#telLink{
-    text-decoration:none;
-    color:black;
+
+#telLink {
+    text-decoration: none;
+    color: black;
 }
 
-#telLink:hover{
-    color:white;
-}
+    #telLink:hover {
+        color: white;
+    }
 
 
 #email {
     margin-left: 20%;
     padding: 5%;
 }
-#email ul li a{
-    text-decoration:none;
-    color:black;
-}
 
-#email ul li a:hover{
-    text-decoration:none;
-    color:white;
-}
+    #email ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+        #email ul li a:hover {
+            text-decoration: none;
+            color: white;
+        }
 
     #email ul,
     #tel ul {
@@ -744,6 +750,12 @@ tr:nth-child(even) {
 
 /*** Tablet And Below ***/
 @media all and (max-width: 980px) {
+    .sway-wrapper {
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 400px;
+    }
 }
 
 /*** Tablet Only ***/
