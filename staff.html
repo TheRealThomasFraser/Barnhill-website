@@ -41,7 +41,9 @@
 
                 </ul>
 
-                <div class="openbtn"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
+                <div class="openbtn">
+                    <div class="openbtn-area"><span></span><span></span><span></span></div>
+                </div>
 
                 <div class="form-popup" id="myForm">
                     <form action="/action_page.php" class="form-container">
@@ -97,108 +99,114 @@
 
 
         <h1 id="pageTitle"> Staff</h1>
-      
-        <h2 class="dropdownTitle" onclick="hideItem('staffLTable', 'SL')"> Leadership <p id="SL" style="display:inline;">&#9660;</p> </h2>
-                    
-                    <table id="staffLTable">
-                        <tr>
-                            <th> Role </th>
-                            <th> Teacher(s) </th>
-                        </tr>
-                        <tr>
-                            <td> Head Teacher </td>
-                            <td> Mrs Angela Bruce </td>
-                        </tr>
-                        <tr>
-                            <td> Depute Head </td>
-                            <td> Mr Philip Smith </td>
-                        </tr>
-                        <tr>
-                            <td> Acting Principal Teacher </td>
-                            <td> Mrs Lindsay Alexander </td>
-                        </tr>
-                    </table>
-                    <h2 class="dropdownTitle" onclick="hideItem('staffSTable', 'SS')"> School <p id="SS" style="display:inline;">&#9660;</p> </h2>
-                    <table id="staffSTable">
-                        <tr>
-                            <th> Class </th>
-                            <th> Teacher(s) </th>
-                        </tr>
-                        <tr>
-                            <td> P1a <br> P1b <br> P1c</td>
-                            <td> Miss Swan <br> Mrs Bain and Mrs Mackenzie <br> Mrs Fairbairn</td>
-                        </tr>
-                        <tr>
-                            <td> P2a <br> P2b</td>
-                            <td> Mrs Hutchison <br> Miss Kemp</td>
-                        </tr>
-                        <tr>
-                            <td> P3a <br> P3b</td>
-                            <td> Mrs McVeigh and Mrs Alexander <br> Mr Jones</td>
-                        </tr>
-                        <tr>
-                            <td> P4a <br> P4b</td>
-                            <td> Miss Watt and Miss Airlie <br> Mrs Fenton and Mrs J Alexander</td>
-                        </tr>
-                        <tr>
-                            <td> P5a <br> P5b</td>
-                            <td> Mrs Stewart <br> Mrs Watt </td>
-                        </tr>
-                        <tr>
-                            <td> P6a <br> P6b</td>
-                            <td> Miss Stewart <br> Miss Morrison</td>
-                        </tr>
-                        <tr>
-                            <td> P6/7 </td>
-                            <td> Miss Alexander </td>
-                        </tr>
-                        <tr>
-                            <td> P7a <br> P7b </td>
-                            <td> Miss Robertson <br> Mrs Goldsmith</td>
-                        </tr>
-                    </table>
-                    <h2 class="dropdownTitle" onclick="hideItem('staffNTable', 'SN')"> Nursery <p id="SN" style="display:inline;">&#9660;</p> </h2>
-            <table id="staffNTable">
-                <tr>
-                    <th> Role </th>
-                    <th> Teacher(s) </th>
-                </tr>
-                <tr>
-                    <td> Senior Early Years Practitioner </td>
-                    <td> Miss Dall </td>
-                </tr>
-                <tr>
-                    <td> Nursery Teacher </td>
-                    <td> Mrs Calder </td>
-                </tr>
-                <tr>
-                    <td> Early Years Educator </td>
-                    <td> Mrs Fenton <br> Miss Ishaq <br> Ms Nicoll </td>
-                </tr>
-                <tr>
-                    <td> Early Years Support Assistant </td>
-                    <td> Miss Campion <br> Mrs Nadeem </td>
-                </tr>
-                <tr>
-                    <td> Early Years Practitioner </td>
-                    <td> Miss Ramsay </td>
-                </tr>
-            </table>
 
-            <div id="settingsPopup">
+        <h2 class="dropdownTitle" onclick="hideItem('staffLTable', 'SL')"> Leadership <p id="SL"
+                style="display:inline;">&#9660;</p>
+        </h2>
 
-                <h1 style="display:block;"> Text Size: </h1>
-                <h2 onclick="shrinkText()"> - </h2>
-                <h2 onclick="enlargeText()"> + </h2>
-          
-                <h1 style="display:block;"> Fonts: </h2>
+        <table id="staffLTable">
+            <tr>
+                <th> Role </th>
+                <th> Teacher(s) </th>
+            </tr>
+            <tr>
+                <td> Head Teacher </td>
+                <td> Mrs Angela Bruce </td>
+            </tr>
+            <tr>
+                <td> Depute Head </td>
+                <td> Mr Philip Smith </td>
+            </tr>
+            <tr>
+                <td> Acting Principal Teacher </td>
+                <td> Mrs Lindsay Alexander </td>
+            </tr>
+        </table>
+        <h2 class="dropdownTitle" onclick="hideItem('staffSTable', 'SS')"> School <p id="SS" style="display:inline;">
+                &#9660;</p>
+        </h2>
+        <table id="staffSTable">
+            <tr>
+                <th> Class </th>
+                <th> Teacher(s) </th>
+            </tr>
+            <tr>
+                <td> P1a <br> P1b <br> P1c</td>
+                <td> Miss Swan <br> Mrs Bain and Mrs Mackenzie <br> Mrs Fairbairn</td>
+            </tr>
+            <tr>
+                <td> P2a <br> P2b</td>
+                <td> Mrs Hutchison <br> Miss Kemp</td>
+            </tr>
+            <tr>
+                <td> P3a <br> P3b</td>
+                <td> Mrs McVeigh and Mrs Alexander <br> Mr Jones</td>
+            </tr>
+            <tr>
+                <td> P4a <br> P4b</td>
+                <td> Miss Watt and Miss Airlie <br> Mrs Fenton and Mrs J Alexander</td>
+            </tr>
+            <tr>
+                <td> P5a <br> P5b</td>
+                <td> Mrs Stewart <br> Mrs Watt </td>
+            </tr>
+            <tr>
+                <td> P6a <br> P6b</td>
+                <td> Miss Stewart <br> Miss Morrison</td>
+            </tr>
+            <tr>
+                <td> P6/7 </td>
+                <td> Miss Alexander </td>
+            </tr>
+            <tr>
+                <td> P7a <br> P7b </td>
+                <td> Miss Robertson <br> Mrs Goldsmith</td>
+            </tr>
+        </table>
+        <h2 class="dropdownTitle" onclick="hideItem('staffNTable', 'SN')"> Nursery <p id="SN" style="display:inline;">
+                &#9660;</p>
+        </h2>
+        <table id="staffNTable">
+            <tr>
+                <th> Role </th>
+                <th> Teacher(s) </th>
+            </tr>
+            <tr>
+                <td> Senior Early Years Practitioner </td>
+                <td> Miss Dall </td>
+            </tr>
+            <tr>
+                <td> Nursery Teacher </td>
+                <td> Mrs Calder </td>
+            </tr>
+            <tr>
+                <td> Early Years Educator </td>
+                <td> Mrs Fenton <br> Miss Ishaq <br> Ms Nicoll </td>
+            </tr>
+            <tr>
+                <td> Early Years Support Assistant </td>
+                <td> Miss Campion <br> Mrs Nadeem </td>
+            </tr>
+            <tr>
+                <td> Early Years Practitioner </td>
+                <td> Miss Ramsay </td>
+            </tr>
+        </table>
+
+        <div id="settingsPopup">
+
+            <h1 style="display:block;"> Text Size: </h1>
+            <h2 onclick="shrinkText()"> - </h2>
+            <h2 onclick="enlargeText()"> + </h2>
+
+            <h1 style="display:block;"> Fonts: </h2>
                 <h2 onclick="changeFont('Georgia')"> Georgia </h2>
                 <h2 onclick="changeFont('Courier New')"> Courier New </h2>
                 <h2 onclick="changeFont('Arial')"> Arial </h2>
                 <h2 onclick="changeFont('Verdana')"> Verdana </h2>
-          
-              </div>
+
         </div>
+    </div>
 
 
     <!-- ------------------- Footer ------------------- -->
@@ -209,27 +217,28 @@
 
             <a href="https://twitter.com/BarnhillPrimary">
                 <img src="https://www.phoronix.net/image.php?id=2023&image=twitter_x" alt="X (Twitter)"
-                     style="width: 60px; height:60px;">
+                    style="width: 60px; height:60px;">
             </a>
             <a href="https://secure.glowscotland.org.uk/login/login.htm">
                 <img src="https://tse3.mm.bing.net/th?id=OIP.2e_o-42OuCuPqAyTXplgXAHaEc&pid=Api" alt="Glow RM Unify"
-                     style="width: 60px; height:60px;">
+                    style="width: 60px; height:60px;">
             </a>
             <a href="https://www.dundeecity.gov.uk/">
-                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api" alt="Dundee City Council"
-                     style="width: 60px; height:60px;">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.mOvYybLpOpVzVJpuYj5pjQHaFM&pid=Api"
+                    alt="Dundee City Council" style="width: 60px; height:60px;">
             </a>
             <a href="http://www.educationscotland.gov.uk/">
-                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api" alt="Education Scotland"
-                     style="width: 60px; height:60px;">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.bawbOETZ8HJexKbpBS7ppwHaC9&pid=Api"
+                    alt="Education Scotland" style="width: 60px; height:60px;">
             </a>
             <a href="https://app.parentpay.com/public/client/security/v2/#/login">
                 <img src="https://tse3.mm.bing.net/th?id=OIP.VxZRig9HkfZhpBCFEdyNEwHaFj&pid=Api" alt="Parent Pay Portal"
-                     style="width: 60px; height:60px;">
+                    style="width: 60px; height:60px;">
             </a>
 
             <p id="cu"> <a href="contact.html"> Contact Us </a>
-                <br> <span id="button" onclick="showSettings()">Settings</span></p>
+                <br> <span id="button" onclick="showSettings()">Settings</span>
+            </p>
 
             <p id="cr">&#169; Barnhill Primary School 2023</p>
 
